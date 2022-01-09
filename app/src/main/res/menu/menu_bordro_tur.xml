@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bordroTur1"
+        android:title="@string/bordroTur1"/>
+    <item
+        android:id="@+id/bordroTur2"
+        android:title="@string/bordroTur2"/>
+    <item
+        android:id="@+id/bordroTur3"
+        android:title="@string/bordroTur3"/>
+    <item
+        android:id="@+id/bordroTur4"
+        android:title="@string/bordroTur4"/>
+    <item
+        android:id="@+id/bordroTur5"
+        android:title="@string/bordroTur5"/>
+    <item
+        android:id="@+id/bordroTur6"
+        android:title="@string/bordroTur6"/>
+    <item
+        android:id="@+id/bordroTur7"
+        android:title="@string/bordroTur7"/>
+
+    <item
+        android:id="@+id/bordroTur8"
+        android:title="@string/bordroTur8"/>
+    <item
+        android:id="@+id/bordroTur9"
+        android:title="@string/bordroTur9"/>
+    <item
+        android:id="@+id/bordroTur10"
+        android:title="@string/bordroTur10"/>
+    <item
+        android:id="@+id/bordroTur11"
+        android:title="@string/bordroTur11"/>
+    <item
+        android:id="@+id/bordroTur12"
+        android:title="@string/bordroTur12"/>
+
+
+</menu>

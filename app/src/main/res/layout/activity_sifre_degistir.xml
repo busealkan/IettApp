@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SifreDegistirActivity">
+
+    <View
+        android:id="@+id/viewSifreDegistirBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/formRengi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgSifreDegistirlLogo"
+        android:layout_width="@dimen/logoBoyut"
+        android:layout_height="@dimen/logoBoyut"
+        android:layout_marginTop="@dimen/logoSifremiUnuttumMargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iettlogo" />
+
+    <Button
+        android:id="@+id/btnSifreDegistir"
+        android:layout_width="@dimen/txtWidthBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:layout_marginTop="@dimen/btnSifremiUnuttumMarginTop"
+        android:background="@color/logoRengi"
+        android:text="@string/sifreDegistir"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDegistirSifreTekrar" />
+
+    <EditText
+        android:id="@+id/txtDegistirSifre"
+        android:layout_width="@dimen/txtWidthBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:layout_marginTop="@dimen/btnSifremiUnuttumMarginTop"
+        android:backgroundTint="@color/logoRengi"
+        android:gravity="center_vertical"
+        android:hint="@string/sifre"
+        android:inputType="textPassword"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSifreDegistirlLogo" />
+
+
+    <EditText
+        android:id="@+id/txtDegistirSifreTekrar"
+        android:layout_width="@dimen/txtWidthBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:layout_marginTop="@dimen/btnSifremiUnuttumMarginTop"
+        android:backgroundTint="@color/logoRengi"
+        android:gravity="center_vertical"
+        android:hint="@string/sifreTekrar"
+        android:inputType="textPassword"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDegistirSifre" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

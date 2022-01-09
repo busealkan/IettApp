@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TalepDetayActivity">
+
+    <Button
+        android:id="@+id/btnTalepRed"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="wrap_content"
+        android:background="@color/baslikButonRengi"
+        android:padding="@dimen/arizaOlusturTextPaddingLeft"
+        android:text="@string/talepRed"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTalepOnay"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="wrap_content"
+        android:background="@color/baslikButonRengi"
+        android:padding="@dimen/arizaOlusturTextPaddingLeft"
+        android:text="@string/talepOnay"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/txtTalepDetaySicil"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:enabled="false"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTalepSicilBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalepDetayBaslik"
+        tools:text="@string/sicilButon"/>
+
+    <Button
+        android:id="@+id/txtTalepDetayAdSoyad"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTalepSicilBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtTalepDetaySicil"
+        tools:text="@string/adSoyad"/>
+
+    <Button
+        android:id="@+id/txtTalepDetayBaslik"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTalepSicilBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtTalepDetayAdSoyad"
+        tools:text="@string/baslikButon" />
+
+    <Button
+        android:id="@+id/txtTalepDetayTarih"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:ems="10"
+        android:gravity="center|left"
+        android:enabled="false"
+        android:inputType="date"
+        android:paddingLeft="8dp"
+        tools:text="@string/tarihButon"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTalepSicilBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtTalepDetayBaslik" />
+
+    <Button
+        android:id="@+id/txtTalepDetayTalep"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        tools:text="@string/talepButon"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTalepSicilBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtTalepDetayTarih" />
+
+    <Button
+        android:id="@+id/txtTalepDetayDurumu"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTalepSicilBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtTalepDetayTalep"
+        tools:text="@string/talepDurumu" />
+
+    <Button
+        android:id="@+id/btnTalepDetaySicilBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/sicilButon"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalepDetayBaslik" />
+
+    <Button
+        android:id="@+id/btnTalepDetayAdSoyadBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/adSoyad"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalepDetaySicilBaslik" />
+
+    <Button
+        android:id="@+id/btnTalepDetayBaslikBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/baslikButon"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalepDetayAdSoyadBaslik" />
+
+    <Button
+        android:id="@+id/btnTalepDetayTarihBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/tarihButon"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalepDetayBaslikBaslik" />
+
+    <Button
+        android:id="@+id/btnTalepDetayTalepBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/talepButon"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalepDetayTarihBaslik" />
+
+    <Button
+        android:id="@+id/btnTalepDetayDurumBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/talepDurumu"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalepDetayTalepBaslik" />
+
+    <Button
+        android:id="@+id/btnTalepDetayBaslik"
+        android:layout_width="@dimen/txtBuyukWidthBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:text="@string/talepDetay"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTalepDetayBaslikIcon"
+        android:layout_width="@dimen/iconBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:drawableLeft="@drawable/left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

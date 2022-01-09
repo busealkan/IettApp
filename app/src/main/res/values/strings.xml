@@ -1,0 +1,604 @@
+<resources>
+    <string name="app_name">Iett</string>
+    <string name="alertTitle">İnternet Bağlantınız Yok</string>
+    <string name="alertMessage">Uygulamayı kullanmak için internete bağlanın.</string>
+    <string name="alertNegativeButon">Kapat</string>
+    <string name="alertPozitiveButon">İnterneti Aç</string>
+
+    <string name="alertCikisTitle">Çıkış Yap?</string>
+    <string name="alertCikisMessage">Uygulamadan Çıkış Yapılsın Mı?</string>
+    <string name="alertCikisNegativeButon">Çıkış</string>
+    <string name="alertCikisPozitifButon">İptal</string>
+
+
+    <string name="prefTimerInterval">1000</string>
+    <string name="prefTimerMillisInFuture">3000</string>
+
+
+    <string name="sifre">Şifre</string>
+    <string name="sifremiUnuttum">Şifremi Unuttum</string>
+    <string name="beniHatirla">Beni Hatırla</string>
+    <string name="girisYap">GİRİŞ YAP</string>
+    <string name="cikisYap">ÇIKIŞ YAP</string>
+    <string name="hesapYok">Hesabın Yok Mu?</string>
+    <string name="kayitOl">KAYIT OL</string>
+
+    <string name="sicilNo">Sicil No.</string>
+    <string name="email">E-mail</string>
+    <string name="sifreGonder">ŞİFRE GÖNDER</string>
+
+    <string name="sifreTekrar">Şifre(Tekrar)</string>
+    <string name="sifreDegistir">ŞİFRE DEĞİŞTİR</string>
+
+    <string name="ad">Ad</string>
+    <string name="soyad">Soyad</string>
+
+    <string name="hesapVar">Zaten Hesabın Var Mı?</string>
+    <string name="sicil">SİCİL</string>
+    <string name="cezalarim">CEZALARIM</string>
+    <string name="kazalarim">KAZALARIM</string>
+    <string name="uyariVeKararlarim">UYARI VE KARARLARIM</string>
+    <string name="icon">ICON</string>
+
+    <string name="talepVeOneri">TALEP VE ÖNERİ</string>
+    <string name="talepEkle">TALEP EKLE</string>
+    <string name="taleplerim">TALEPLERİM</string>
+    <string name="oneriEkle">ÖNERİ EKLE</string>
+    <string name="onerilerim">ÖNERİLERİM</string>
+
+    <string name="talepler">TALEPLER</string>
+    <string name="yeniTalep">YENİ TALEP</string>
+    <string name="oneriler">ÖNERİLER</string>
+    <string name="yeniOneri">YENİ ÖNERİ</string>
+
+    <string name="sicilButon">SİCİL</string>
+    <string name="adButon">AD</string>
+    <string name="soyadButon">SOYAD</string>
+    <string name="baslikButon">BAŞLIK</string>
+    <string name="aciklamaButon">AÇIKLAMA</string>
+
+    <string name="talepBaslikTools">TALEP BAŞLIĞINI GİRİNİZ</string>
+    <string name="talepAciklamaTools">TALEP AÇIKLAMASINI GİRİNİZ</string>
+
+    <string name="gonder">GÖNDER</string>
+
+    <string name="talepDetay">TALEP DETAY</string>
+
+    <string name="tarihButon">TARİH</string>
+    <string name="cevapButon">CEVAP</string>
+    <string name="talepButon">TALEP</string>
+
+    <string name="oneriBaslikTools">ÖNERİ BAŞLIĞINI GİRİNİZ</string>
+    <string name="oneriAciklamaTools">ÖNERİ AÇIKLAMASINI GİRİNİZ</string>
+
+    <string name="oneriDetay">ÖNERİ DETAY</string>
+    <string name="oneri">ÖNERİ</string>
+
+    <string name="hatArama">HAT ARAMA</string>
+    <string name="hatKod">Hat Kodunu Giriniz</string>
+
+    <string name="isListesi">İŞ LİSTESİ</string>
+    <string name="isSorgula">İŞ SORGULA</string>
+
+    <string name="saatButon">SAAT</string>
+    <string name="gorevYeriButon">GÖREV YERİ</string>
+    <string name="fiiliGoreviButon">FİİLİ GÖREVİ</string>
+
+    <string name="isSorgulaTarihTools">Arama Yapılacak İş Tarihini Seçiniz</string>
+
+    <string name="izinSorgula">İZİN SORGULA</string>
+
+    <string name="izinSorgulaTarihTools">Arama Yapılacak İzin Tarihini Seçiniz</string>
+
+
+    <string name="toastKayitBasarili">Kayıt Başarılı</string>
+
+    <string name="toastKayitBasarisiz">Kayıt Başarısız</string>
+    <string name="toastBosAlan">Boş Alanları Doldurunuz</string>
+
+    <string name="toastZorunluBosAlan">Zorunlu Alanları Doldurunuz</string>
+
+
+    <string name="toastGirisBasarili">Giriş Başarılı</string>
+    <string name="toastGirisBasarisiz">Giriş Başarısız</string>
+
+    <string name="toastSifreKarakter">Şifre En Az 6 Karakter Olmalıdır.</string>
+
+    <string name="toastSifre">Şifrenizde En Az 1 Büyük Harf, 1 Küçük Harf Ve 1 Rakam Bulunmalıdır.</string>
+    <string name="toastSifreSayi">Şifrenizde En Az Bir Sayı Bulunmalıdır.</string>
+
+    <string name="toastEmailFormat">E-mail Formatı Yanlış.</string>
+    <string name="toastSifreUyusmuyor">Şifreler Uyuşmuyor.</string>
+
+    <string name="toastSifreGondermeBasarili">Yeni Parola İçin Gerekli Bağlantı Adresinize Gönderildi!</string>
+    <string name="toastSifreGondermeBasarisiz">Yeni Parola İçin Gerekli Bağlantı Adresinize Gönderilemedi!</string>
+
+    <string name="oturumKapatiliyor">Oturum Kapatılıyor.</string>
+
+    <string name="toastEmailBulunamadi">Kayıtlı E-mail Bulunamadı.</string>
+
+    <string name="toastEmailBulundu">Bu E-mail Adresi Kullanılmakta.</string>
+
+    <string name="profil">PROFİL</string>
+
+    <string name="profilAd">AD</string>
+    <string name="profilSoyad">SOYAD</string>
+    <string name="profilSicil">SİCİL</string>
+    <string name="profilEmail">E-MAIL</string>
+    <string name="profilResimSeciniz">SEÇİNİZ</string>
+    <string name="profilDogumTarihi">01.01.01</string>
+    <string name="profilKanGrubu">KAN GRUBU GİRİNİZ</string>
+
+    <string name="profilDogumTarihiSec">DOĞUM TARİHİ SEÇİNİZ</string>
+
+    <string name="profileGit">PROFİLE GİT</string>
+
+    <string name="anaSayfaHosgeldiniz">HOŞGELDİNİZ</string>
+    <string name="anaSayfaAdSoyad">AD SOYAD</string>
+
+    <string name="bordroButon">BORDRO</string>
+    <string name="isListesiButon">İŞ LİSTESİ</string>
+    <string name="izinlerButon">İZİNLERİM</string>
+    <string name="arizaOlusturButon">ARIZA OLUŞTUR</string>
+    <string name="arizalarimButon">ARIZALARIM</string>
+    <string name="talepVeOneriButon">TALEP VE ÖNERİ</string>
+    <string name="kutuphaneButon">KÜTÜPHANE</string>
+    <string name="hatSorgulaButon">HAT SORGULA</string>
+
+    <string name="izinOnayButon">İZİN ONAYLAMA</string>
+    <string name="raporOnayButon">TUTANAK ONAYLAMA</string>
+    <string name="arizaOnayButon">ARIZA ONAYLAMA</string>
+    <string name="raporOlusturButon">TUTANAK OLUŞTUR</string>
+
+    <string name="talepListeleButon">TALEP LİSTELE</string>
+    <string name="oneriListeleButon">ÖNERİ LİSTELE</string>
+    <string name="talepOnaylaButon">TALEP ONAYLA</string>
+    <string name="oneriOnaylaButon">ÖNERİ ONAYLA</string>
+    <string name="isOlusturButon">İŞ OLUŞTUR</string>
+    <string name="raporlarButon">TUTANAKLAR</string>
+
+    <string name="raporDuzenleButon">Tutanak Düzenle</string>
+
+
+    <string name="toastSifreGuncellemeBasarili">ŞİFRE GÜNCELLEME BAŞARILI</string>
+    <string name="toastSifreGuncellemeBasarisiz">ŞİFRE GÜNCELLEME BAŞARISIZ</string>
+
+    <string name="toastEskiSifeIleAyni">Yeni Şifreniz Eski Şifreniz İle Aynı Olamaz</string>
+
+    <string name="anasayfayaGit">ANASAYFAYA GİT</string>
+    <string name="degisiklikleriKaydet">DEĞİŞİKLİKLERİ KAYDET</string>
+
+    <string name="toastProfilGuncellemeBasarili">PROFİL GÜNCELLEME BAŞARILI</string>
+    <string name="toastProfilGuncellemeBasarisiz">PROFİL GÜNCELLEME BAŞARISIZ</string>
+
+    <string name="toastSiciliniziDegistiremezsiniz">SİCİLİNİZİ DEĞİŞTİREMEZSİNİZ</string>
+
+    <string name="toastEmailGuncellemeBasarili">E-MAIL GÜNCELLEME BAŞARILI</string>
+    <string name="toastEmailGuncellemeBasarisiz">E-MAIL GÜNCELLEME BAŞARISIZ</string>
+
+    <string name="toastDegisiklikYapilmadi">DEĞİŞİKLİK YAPILMADI</string>
+
+    <string name="kanGrubuSeciniz">KAN GRUBU SEÇİNİZ</string>
+    <string name="kanGrubuABRhPozitif">AB Rh+</string>
+    <string name="kanGrubuABRhNegatif">AB Rh-</string>
+    <string name="kanGrubuARhPozitif">A Rh+</string>
+    <string name="kanGrubuARhNegatif">A Rh-</string>
+    <string name="kanGrubuBRhPozitif">B Rh+</string>
+    <string name="kanGrubuBRhNegatif">B Rh-</string>
+    <string name="kanGrubu0RhPozitif">0 Rh+</string>
+    <string name="kanGrubu0RhNegatif">0 Rh-</string>
+
+    <string name="toastResimSecimiGerceklesemedi">RESİM SEÇİMİ GERÇEKLEŞEMEDİ</string>
+    <string name="toastResimYuklemeBasarili">RESİM YÜKLEME İŞLEMİ BAŞARILI</string>
+    <string name="toastResimYukleniyor">RESİM YÜKLENİYOR</string>
+    <string name="toastResimYuklemeGerceklesemedi">RESİM YÜKLEME İŞLEMİ GERÇEKLEŞEMEDİ</string>
+
+
+    <string name="arizaOlusturHatKodunuSeciniz">Hat Kodunu Giriniz</string>
+    <string name="arizaOlusturHatIstikametiniSeciniz">Hat İstikameti Giriniz</string>
+    <string name="arizaOlusturArizaBasligiGiriniz">Arıza Başlığı Giriniz</string>
+    <string name="arizaOlusturArizaAciklamasiGiriniz">Arıza Açıklaması Giriniz</string>
+
+    <string name="toastArizaOlusturmaBasarili">ARIZA OLUŞTURMA BAŞARILI</string>
+    <string name="toastArizaOlusturmaBasarisiz">ARIZA OLUŞTURMA BAŞARISIZ</string>
+    <string name="toastHatKodunaSahipAracBulunamadi">HAT KODUNA SAHİP ARAÇ BULUNAMADI</string>
+
+    <string name="toolsArizaBaslikLastikPatlamasi">LASTİK PATLAMASI</string>
+
+    <string name="arizaDetay">ARIZA DETAY</string>
+
+    <string name="adSoyad">AD SOYAD</string>
+    <string name="arizaBaslik">ARIZA BAŞLIK</string>
+    <string name="arizaAciklama">ARIZA AÇIKLAMA</string>
+    <string name="arizaTarih">ARIZA TARİH</string>
+    <string name="arizaHatIstikamet">HAT İSTİKAMET</string>
+    <string name="arizaHatKodu">HAT KODU</string>
+    <string name="arizaDurumu">ARIZA DURUMU</string>
+
+    <string name="arizaSonlandir">ARIZA SONLANDIR</string>
+    <string name="arizaIslemeAl">ARIZA İŞLEME AL</string>
+
+    <string name="toastTalepOlusturmaBasarili">TALEP OLUŞTURMA BAŞARILI</string>
+    <string name="toastTalepOlusturmaBasarisiz">TALEP OLUŞTURMA BAŞARISIZ</string>
+
+    <string name="talepDurumu">DURUMU</string>
+
+    <string name="talepRed">TALEP RED</string>
+    <string name="talepOnay">TALEP ONAY</string>
+
+    <string name="toastOneriOlusturmaBasarili">ÖNERİ OLUŞTURMA BAŞARILI</string>
+    <string name="toastOneriOlusturmaBasarisiz">ÖNERİ OLUŞTURMA BAŞARISIZ</string>
+
+    <string name="oneriDurumu">DURUMU</string>
+
+    <string name="oneriRed">ÖNERİ RED</string>
+    <string name="oneriOnay">ÖNERİ ONAY</string>
+
+    <string name="toastKullaniciDurumuPasif">KULLANICI DURUMUNU AKTİFLEŞTİRİNİZ</string>
+
+    <string name="bolge">BÖLGE - HAT KOD</string>
+    <string name="vardiya">VARDİYA</string>
+    <string name="olustur">OLUŞTUR</string>
+
+    <string name="isTarihiSec">İŞ TARİHİ SEÇİNİZ</string>
+    <string name="isBaslangicSaat">İŞ BAŞLANGIÇ SAATİ</string>
+    <string name="isBitisSaat">İŞ BİTİŞ SAATİ</string>
+
+    <string name="baslangicSaat">BAŞLANGIÇ SAATİ</string>
+    <string name="bitisSaat">BİTİŞ SAATİ</string>
+
+
+    <string name="toastIsOlusturmaBasarili">İŞ OLUŞTURMA BAŞARILI</string>
+    <string name="toastIsOlusturmaBasarisiz">İŞ OLUŞTURMA BAŞARISIZ</string>
+
+    <string name="isDuzenle">İŞ DÜZENLE</string>
+    <string name="duzenle">DÜZENLE</string>
+
+    <string name="toastIsGuncellemeBasarili">İŞ GÜNCELLEME BAŞARILI</string>
+    <string name="toastIsGuncellemeBasarisiz">İŞ GÜNCELLEME BAŞARISIZ</string>
+
+    <string name="raporDurumu">TUTANAK DURUMU</string>
+
+    <string name="raporSonlandir">TUTANAK SONLANDIR</string>
+    <string name="raporIslemeAl">TUTANAK İŞLEME AL</string>
+
+    <string name="toastRaporOlusturmaBasarili">TUTANAK OLUŞTURMA BAŞARILI</string>
+    <string name="toastRaporOlusturmaBasarisiz">TUTANAK OLUŞTURMA BAŞARISIZ</string>
+
+    <string name="toastRaporGuncellemeBasarili">TUTANAK GÜNCELLEME BAŞARILI</string>
+    <string name="toastRaporGuncellemeBasarisiz">TUTANAK GÜNCELLEME BAŞARISIZ</string>
+
+
+    <string name="raporOlusturSicilGiriniz">Sicil No. Giriniz</string>
+    <string name="raporOlusturHatIstikametiniSeciniz">Hat İstikameti Giriniz</string>
+    <string name="raporOlusturRaporBasligiGiriniz">Tutanak Başlığı Giriniz</string>
+    <string name="raporOlusturRaporAciklamasiGiriniz">Tutanak Açıklaması Giriniz</string>
+
+
+    <string name="toolsRaporBaslikDuraktaDurmadı">LASTİK PATLAMASI</string>
+
+    <string name="raporDetay">TUTANAK DETAY</string>
+    <string name="raporlar">TUTANAKLAR</string>
+
+    <string name="raporSicilTools">123456</string>
+    <string name="raporAdSoyadTools">Mehmet Yıldız</string>
+    <string name="raporTarihTools">22/04/2021</string>
+
+    <string name="raporBaslikTools">Durakta Durmadı</string>
+
+    <string name="logRetrofit">RETROFIT</string>
+    <string name="logOnNext">onNext :</string>
+    <string name="logOnError">onError :</string>
+    <string name="logOnComplete">onComplete :</string>
+    <string name="logOnSubscribe">onSubscribe :</string>
+
+
+    <string name="raporRed">TUTANAK RED</string>
+    <string name="raporOnay">TUTANAK ONAY</string>
+
+    <string name="raporTarih">TUTANAK TARİH</string>
+    <string name="raporBaslik">TUTANAK BAŞLIK</string>
+    <string name="raporAciklama">TUTANAK AÇIKLAMA</string>
+
+    <string name="raporYazilanSicil">TUTANAK YAZILAN SİCİL</string>
+    <string name="raporYazanSicil">TUTANAK YAZAN SİCİL</string>
+
+    <string name="isListeIslemleri">İŞ LİSTE İŞLEMLERİ</string>
+    <string name="islerim">İŞLERİM</string>
+
+
+    <string name="izinOlustur">İZİN OLUŞTUR</string>
+    <string name="izinTuruSeciniz">İZİN TÜRÜ SEÇİNİZ</string>
+    <string name="izinGunSayisi">İZİN GÜN SAYISI</string>
+    <string name="izinBaslangicTarihi">İZİN BAŞLANGIÇ TARİHİ</string>
+    <string name="izinBitisTarihi">İZİN BİTİŞ TARİHİ</string>
+
+    <string name="izinDuzenle">İZİN DÜZENLE</string>
+
+    <string name="izinOlusturVeyaDuzenle">İZİN OLUŞTUR VEYA DÜZENLE</string>
+    <string name="izinBaslangicTarihiSec">İZİN BAŞLANGIÇ TARİHİ SEÇİNİZ</string>
+    <string name="izinBitisTarihiSec">İZİN BİTİŞ TARİHİ SEÇİNİZ</string>
+
+    <string name="izinTurUcretsiz">ÜCRETSİZ İZİN</string>
+    <string name="izinTurUcretli">ÜCRETLİ İZİN</string>
+    <string name="izinTurHafta">HAFTA TATİL İZNİ</string>
+    <string name="izinTurHastalik">HASTALIK İZNİ</string>
+
+    <string name="izinTurSosyal">SOSYAL İZİN</string>
+    <string name="izinTurZorunlu">ZORUNLU İZİN</string>
+    <string name="izinTurYillik">YILLIK İZİN</string>
+
+    <string name="toastIzinOlusturmaBasarili">İZİN OLUŞTURMA BAŞARILI</string>
+    <string name="toastIzinOlusturmaBasarisiz">İZİN OLUŞTURMA BAŞARISIZ</string>
+
+    <string name="toastIzinGuncellemeBasarili">İZİN GÜNCELLEME BAŞARILI</string>
+    <string name="toastIzinGuncellemeBasarisiz">İZİN GÜNCELLEME BAŞARISIZ</string>
+
+    <string name="izinTuru">İZİN TÜRÜ</string>
+
+    <string name="izinBaslangicTarihiTools">07/06/2021</string>
+    <string name="izinBitisTarihiTools">09/06/2021</string>
+    <string name="izinGunSayisiTools">2</string>
+
+    <string name="izinSil">İZİN SİL</string>
+    <string name="isSil">İŞ SİL</string>
+    <string name="isSilinecekTarihTools">Silinecek İş Tarihini Seçiniz</string>
+
+
+    <string name="sil">SİL</string>
+    <string name="izinSilinecekTarihTools">Silinecek İzin Tarihini Seçiniz</string>
+    <string name="izinSilinecekSicilTools">Sicil Bilgisi Giriniz</string>
+
+    <string name="izinDurumu">İZİN DURUMU</string>
+
+
+    <string name="arizalar">ARIZALAR</string>
+    <string name="arizali">Arızalı</string>
+    <string name="calisiyor">Çalışıyor</string>
+
+
+    <string name="soforSicil">ŞOFÖR SİCİL</string>
+
+    <string name="arizaDevamEdiyor">Arıza Devam Ediyor</string>
+    <string name="arizaOnayBekleniyor">Onay Bekleniyor</string>
+    <string name="arizaSonlandirildi">Arıza Sonlandırıldı</string>
+
+    <string name="detayaGit">Detaya Git</string>
+
+    <string name="tarihSlash">/</string>
+
+    <string name="toastSicilNumarasinaAitCalisanBulunmamaktadir">Sicil Numarasına Ait Çalışan Bulunmamaktadır.</string>
+    <string name="snackbarTarihineAitIsListesiBulunmaktadir"> Tarihine Ait İş Listesi Bulunmaktadır</string>
+    <string name="snackbarIsDuzenle">İş Düzenle</string>
+
+    <string name="snackbarTarihineAitIzinBulunmaktadir"> Tarihine Ait İzin Bulunmaktadır</string>
+    <string name="snackbarTarihlerArasindaBaskaIzinBulunmaktadir">Tarihler Aralığında Başka İzin Bulunmaktadır</string>
+
+    <string name="toastTariheAitIsBulunmamaktadir"> Tarihe Ait İş Bulunmamaktadır</string>
+    <string name="toastTariheAitIzinBulunmamaktadir"> Tarihe Ait İzin Bulunmamaktadır</string>
+
+
+    <string name="toastIsSilmeBasarili">İş Silme Başarılı</string>
+    <string name="toastIsSilmeBasarisiz">İş Silme Başarısız</string>
+
+    <string name="araButon">ARA</string>
+
+    <string name="snackbarTarihineAitIsListesiBulunmamaktadir"> Tarihine Ait İş Listesi Bulunmamaktadır</string>
+
+    <string name="toolsSorgulanacakIsTarihiniSeciniz">Sorgulanacak İş Tarihini Seçiniz</string>
+
+    <string name="toastIsListesiBulunmamaktadir">İş Listesi Bulunmamaktadır</string>
+    <string name="snackbarIzinBulunmamaktadir"> Seçilen Tarihte İzin Bulunmamaktadır</string>
+    <string name="toastIzinBulunmamaktadir"> Seçilen Tarihte İzin Bulunmamaktadır</string>
+
+    <string name="toastYanlisIzinTarihiSectiniz">İzin Tarih Aralığını Yanlış Seçtiniz</string>
+
+
+    <string name="izinIslemleri">İZİN İŞLEMLERİ</string>
+    <string name="toolsSorgulanacakIzinTarihiniSeciniz">Sorgulanacak İzin Tarihi Seçiniz</string>
+
+    <string name="toastIzinSilmeBasarili">İzin Silme Başarılı</string>
+    <string name="toastIzinSilmeBasarisiz">İzin Silme Başarısız</string>
+
+    <string name="toastIzinDuzenlemeBasarili">İZİN DÜZENLEME BAŞARILI</string>
+
+    <string name="raporIslemde">Devam Ediyor</string>
+    <string name="raporOnayBekliyor">Onay Bekliyor</string>
+    <string name="raporSonlandirildi">Sonlandırıldı</string>
+
+
+    <string name="alertIzinTitle">İzin Sil</string>
+    <string name="alertIzinMessage">İzini Silmek İstediğinizden Emin Misiniz?</string>
+    <string name="alertIzinNegative">Evet</string>
+    <string name="alertIzinPositive">Hayır</string>
+
+    <string name="alertIsTitle">İş Sil</string>
+    <string name="alertIsMessage">İşi Silmek İstediğinizden Emin Misiniz?</string>
+    <string name="alertIsNegative">Evet</string>
+    <string name="alertIsPositive">Hayır</string>
+
+    <string name="dateOk">Ok</string>
+    <string name="dateCancel">Cancel</string>
+
+    <string name="bordroTur1">İşçi - İşçi Maaş Bordrosu</string>
+    <string name="bordroTur2">İşçi - İşveren İkramiye Bordrosu</string>
+    <string name="bordroTur3">İşçi - Devlet İkramiye Bordrosu</string>
+    <string name="bordroTur4">İşçi - Kıdemli İşçiliğe Teşvik Bordrosu</string>
+    <string name="bordroTur5">İşçi - Ödül İkramiye Bordrosu</string>
+    <string name="bordroTur6">İşçi - Yazlık Giyim Bordrosu</string>
+    <string name="bordroTur7">İşçi - Kışlık Giyim Bordrosu</string>
+    <string name="bordroTur8">İşçi - Promosyon Ödemesi</string>
+    <string name="bordroTur9">İşçi - Tahsil Yardımı</string>
+    <string name="bordroTur10">İşçi - Avans Bordrosu</string>
+    <string name="bordroTur11">İşçi - Ek Maaş Bordrosu</string>
+    <string name="bordroTur12">İsfalt Bordrosu</string>
+
+    <string name="bordroTarihSeciniz">Bordro Tarih Seçiniz</string>
+    <string name="bordroTarihTools">Arama Yapılacak Tarihi Seçiniz</string>
+    <string name="bordroTurSeciniz">Arama Yapılacak Bordro Türü Seçiniz</string>
+
+    <string name="toastBordroBulunmamaktadir">Bordro Bilgisi Bulunmamaktadır</string>
+
+    <string name="bordroKisiselBilgiler">KİŞİSEL BİLGİLER</string>
+    <string name="bordroIsYeri">İş Yeri</string>
+    <string name="bordroSskNo">Ssk No</string>
+    <string name="bordroSskTescil">Ssk Tescil</string>
+    <string name="bordroUnvani">Unvanı</string>
+    <string name="bordroGrup">Grup</string>
+    <string name="bordroSaatUcreti">Saat Ücreti</string>
+    <string name="bordroSigortaGunu">Sigorta Günü</string>
+
+    <string name="bordroUcret">ÜCRET</string>
+    <string name="bordroKazanclar">KAZANÇLAR</string>
+    <string name="bordroOzelKesintiler">ÖZEL KESİNTİLER</string>
+    <string name="bordroYasalKesintiler">YASAL KESİNTİLER</string>
+
+    <string name="bordroAskerlikBorclari">Askerlik Borçları</string>
+    <string name="bordroAvans">Avans</string>
+    <string name="bordroAylikSigortaMatrahi">Aylık Sigorta Matrahı</string>
+    <string name="bordroAylikVergiMatrahi">Aylık Vergi Matrahı</string>
+    <string name="bordroBerber">Berber</string>
+    <string name="bordroCeza">Ceza</string>
+    <string name="bordroDamgaPulu">Damga Pulu</string>
+    <string name="bordroEngelliIndirimi">Engelli İndirimi</string>
+    <string name="bordroGelirVergisi">Gelir Vergisi</string>
+    <string name="bordroGunVeSaatToplamUcret">Gün Ve Saat Toplam Ücret</string>
+    <string name="bordroHaciz">Haciz</string>
+    <string name="bordroHasar">Hasar</string>
+    <string name="bordroHayatSigortasi">Hayat Sigortası</string>
+    <string name="bordroIssizlikSigortasi">İşsizlik Sigortası</string>
+    <string name="bordroIsverenIssizlik">İşveren İşsizlik</string>
+    <string name="bordroIsverenSsk">İşveren Ssk</string>
+    <string name="bordroKefalet">Kefalet</string>
+    <string name="bordroKesintilerToplami">Kesintiler Toplamı</string>
+    <string name="bordroKres">Kres</string>
+    <string name="bordroMuhtelifBorc">Muhtelif Borç</string>
+    <string name="bordroNafaka">Nafaka</string>
+    <string name="bordroNetUcret">Net Ücret</string>
+    <string name="bordroOzelKesintiToplami">Özel Kesinti Toplamı</string>
+    <string name="bordroSendikaKesintisi">Sendika Kesintisi</string>
+    <string name="bordroSgkTavaniniAsanMiktar">Sgk Tavanını Aşan Miktar</string>
+    <string name="bordroSigorta">Sigorta</string>
+    <string name="bordroSskNoId">Ssk No Id</string>
+    <string name="bordroTelefon">Telefon</string>
+    <string name="bordroTrafikBorcu">Trafik Borcu</string>
+    <string name="bordroUcretMaliyeti">Ücret Maliyeti</string>
+    <string name="bordroUcretToplam">Ücret Toplam</string>
+    <string name="bordroVergiSskBorcu">Vergi Ssk Borcu</string>
+    <string name="bordroYasalKesintiToplami">Yasal Kesinti Toplamı</string>
+    <string name="bordroYillikTgvm">Yıllık Tgvm</string>
+
+
+    <string name="bordroNormalMesaiGun">Normal Mesai Gün</string>
+    <string name="bordroNormalMesaiSaat">Normal Mesai Saat</string>
+    <string name="bordroNormalMesaiTutar">Normal Mesai Tutar</string>
+    <string name="bordroVardiyaZammiSaat">Vardiya Zammı Saat</string>
+    <string name="bordroVardiyaZammiTutar">Vardiya Zammı Tutar</string>
+    <string name="bordroHaftaTatiliGun">Hafta Tatili Gün</string>
+    <string name="bordroHaftaTatiliSaat">Hafta Tatili Saat</string>
+    <string name="bordroHaftaTatiliTutar">Hafta Tatili Tutar</string>
+    <string name="bordroFazlaMesaiSaatYuzdeYuz">Fazla Mesai Saat %100</string>
+    <string name="bordroFazlaMesaiTutarYuzdeYuz">Fazla Mesai Tutar %100</string>
+    <string name="bordroFazlaMesaiSaatYuzdeIkiYuz">Fazla Mesai Saat %200</string>
+    <string name="bordroFazlaMesaiTutarYuzdeIkiYuz">Fazla Mesai Tutar %200</string>
+    <string name="bordroFazlaMesaiSaatYuzdeUcYuz">Fazla Mesai Saat %300</string>
+    <string name="bordroFazlaMesaiTutarYuzdeUcYuz">Fazla Mesai Tutar %300</string>
+    <string name="bordroChttAltiGunSaat">Chtt Altı Gün Saat</string>
+    <string name="bordroChttAltiGunTutar">Chtt Altı Gün Tutar</string>
+    <string name="bordroCBaytTutariSaat">C Bayt Tutarı Saat</string>
+    <string name="bordroCBaytTutariTutar">C Bayt Tutarı Tutar</string>
+    <string name="bordroDinlenmeliCalismaSaati">Dinlenmeli Çalışma Saati</string>
+    <string name="bordroDinlenmeliCalismaTutar">Dinlenmeli Çalışma Tutarı</string>
+    <string name="bordroMukabilCalismaSaati">Mukabil Çalışma Saati</string>
+    <string name="bordroMukabilCalismaTutar">Mukabil Çalışma Tutar</string>
+
+    <string name="bordroYillikUcretliIzinGun">Yıllık Ücretli İzin Gün</string>
+    <string name="bordroYillikUcretliIzinSaat">Yıllık Ücretli İzin Saat</string>
+    <string name="bordroYillikUcretliIzinTutar">Yıllık Ücretli İzin Tutar</string>
+    <string name="bordroHastalikVeIstIzniGun">Hastalık Ve Ist İzni Gün</string>
+    <string name="bordroHastalikVeIstIzniSaat">Hastalık Ve Ist İzni Saat</string>
+    <string name="bordroHastalikVeIstIzniTutar">Hastalık Ve Ist İzni Tutar</string>
+    <string name="bordroSosyalIzinGun">Sosyal İzin Gün</string>
+    <string name="bordroSosyalIzinSaat">Sosyal İzin Saat</string>
+    <string name="bordroSosyalIzinTutar">Sosyal İzin Tutar</string>
+    <string name="bordroUcretsizIzinGun">Ücretsiz İzin Gün</string>
+    <string name="bordroUcretsizIzinSaat">Ücretsiz İzin Saat</string>
+    <string name="bordroUcretsizIzinTutar">Ücretsiz İzin Tutar</string>
+    <string name="bordroYoneticiTazminati">Yönetici Tazminatı</string>
+
+    <string name="bordroCezaIade">Ceza İade</string>
+    <string name="bordroHacizIade">Haciz İade</string>
+    <string name="bordroHasarIade">Hasar İade</string>
+    <string name="bordroMuhtelifArti">Muhtelif Artı</string>
+    <string name="bordroMuhtelifEksi">Muhtelif Eksi</string>
+    <string name="bordroYemek">Yemek</string>
+    <string name="bordroNetIlave">Net İlave</string>
+    <string name="bordroNetIlave2">Net İlave 2</string>
+    <string name="bordroSosyalPaket">Sosyal Paket</string>
+    <string name="bordroAgi">Agi</string>
+
+    <string name="bordroSicil">Sicil</string>
+    <string name="bordroSoyad">Soyad</string>
+    <string name="bordroAd">Ad</string>
+
+    <string name="hatKodArama">Arama Yapılacak Hat Kodunu Giriniz</string>
+
+    <string name="hatTabela">HAT TABELA</string>
+
+    <string name="cezalar">CEZALAR</string>
+    <string name="kazalar">KAZALAR</string>
+    <string name="uyariVeKararlar">UYARI VE KARARLAR</string>
+
+    <string name="cezaYeri">Ceza Yeri</string>
+    <string name="ceza">Ceza</string>
+    <string name="cezaTarih">Ceza Tarih</string>
+
+    <string name="kazaYeri">Kaza Yeri</string>
+    <string name="kazaTuru">Kaza Türü</string>
+    <string name="kazaHasar">Hasar</string>
+    <string name="kazaTarih">Kaza Tarihi</string>
+
+    <string name="aciklama">Açıklama</string>
+    <string name="disiplin">Disiplin</string>
+    <string name="uyariVeKararlarTarih">Tarih</string>
+
+    <string name="toastUyariVeKararlar">Uyarı Ve Karar Bulunmamaktadır</string>
+    <string name="toastCezalar">Ceza Bulunmamaktadır</string>
+    <string name="toastKazalar">Kaza Bulunmamaktadır</string>
+
+    <string name="toastHatKodunaAitAractArizaBulunmaktadır">Hat Koduna Ait Aracta Ariza Bulunmaktadır</string>
+
+    <string name="kutuphane">KÜTÜPHANE</string>
+    <string name="kutuphaneDosyalar">DOSYALAR</string>
+    <string name="kutuphaneBilgiler">BİLGİLER</string>
+
+    <string name="toastDosyaIndiriliyor">Dosyası İndiriliyor</string>
+
+    <string name="anadoluBolgesiDeparHatlari">Anadolu Bölgesi Depar Hatları</string>
+    <string name="anadoluBolgesiDeparHatlari243">243</string>
+    <string name="anadoluBolgesiDeparHatlari279">279</string>
+    <string name="anadoluBolgesiDeparHatlari352">352</string>
+    <string name="anadoluBolgesiDeparHatlari243KI">KADIKÖY - İÇMELER</string>
+    <string name="anadoluBolgesiDeparHatlari279SK">ŞİLE YOLU - KADIKÖY</string>
+    <string name="anadoluBolgesiDeparHatlari352SU">SULTANBEYLİ - UZUNÇAYIR</string>
+
+    <string name="avrupaBolgesiDeparHatlari">Avrupa Bölgesi Depar Hatları</string>
+    <string name="avrupaBolgesiDeparHatlari189">189</string>
+    <string name="avrupaBolgesiDeparHatlari212">212</string>
+    <string name="avrupaBolgesiDeparHatlari213">213</string>
+    <string name="avrupaBolgesiDeparHatlari189KH">KADIKÖY - R.HİSARÜSTÜ</string>
+    <string name="avrupaBolgesiDeparHatlari212BA">BAŞAKŞEHİR 4.ETAP - AŞIKVEYSEL CAD.</string>
+    <string name="avrupaBolgesiDeparHatlari213GB">GÜRPINAR - BAKIRKÖY</string>
+
+    <string name="acilTelefonlar">ACİL TELEFONLAR</string>
+    <string name="acilTelefonlarAra">Telefon Numarası Veya Başlık Giriniz</string>
+
+    <string name="talepOnaylandi">Talep Onaylandı</string>
+    <string name="talepReddedildi">Talep Reddedildi</string>
+    <string name="onayBekleniyor">Onay Bekleniyor</string>
+
+    <string name="oneriOnaylandi">Öneri Onaylandı</string>
+    <string name="oneriReddedildi">Öneri Reddedildi</string>
+
+
+</resources>

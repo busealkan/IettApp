@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/logoRengi</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="SwitchCompatTheme" >
+        <item name="colorControlActivated">@color/logoRengi</item>
+    </style>
+
+    <style name="DateTimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorControlActivated">@color/logoRengi</item>
+        <item name="colorAccent">@color/logoRengi</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+    </style>
+
+
+    <style name="MonthPickerDialogStyle" >
+        <item name="monthBgColor">@color/white</item>
+        <item name="monthBgSelectedColor">@color/logoRengi</item>
+        <item name="monthFontColorSelected">@color/white</item>
+        <item name="monthFontColorNormal">@color/logoRengi</item>
+        <item name="monthFontColorDisabled">@color/logoRengi</item>
+
+        <item name="headerBgColor">@color/colorAccent</item>
+        <item name="headerFontColorSelected">@color/white</item>
+        <item name="headerFontColorNormal">@color/white</item>
+        <item name="headerTitleColor">@color/white</item>
+
+        <item name="dialogActionButtonColor">@color/logoRengi</item>
+    </style>
+
+
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

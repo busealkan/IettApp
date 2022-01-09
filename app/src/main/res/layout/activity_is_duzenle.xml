@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/isDuzenleLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.IsDuzenleActivity">
+
+    <Button
+        android:id="@+id/btnIsDuzenleBaslik"
+        android:layout_width="@dimen/butonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:paddingRight="@dimen/btnProfilBaslikPaddingRight"
+        android:text="@string/isDuzenle"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnIsDuzenleBaslikIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnIsDuzenleBaslikIcon"
+        android:layout_width="@dimen/iconBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:drawableLeft="@drawable/left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnIsDuzenle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:text="@string/duzenle"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtIsDuzenleSicil"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@drawable/kan_grubu_btn_design"
+        android:ems="10"
+        android:gravity="center|left"
+        android:hint="@string/sicilButon"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziOrtaBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIsDuzenleBaslik" />
+
+    <EditText
+        android:id="@+id/txtIsDuzenleBolge"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@drawable/kan_grubu_btn_design"
+        android:ems="10"
+        android:gravity="center|left"
+        android:hint="@string/bolge"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIsDuzenleSicil" />
+
+    <Button
+        android:id="@+id/btnIsDuzenleTarih"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@drawable/kan_grubu_btn_design"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+        android:text="@string/isTarihiSec"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIsDuzenleBolge" />
+
+    <EditText
+        android:id="@+id/txtIsDuzenleSaatBaslangici"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@drawable/kan_grubu_btn_design"
+        android:ems="10"
+        android:gravity="center|left"
+        android:hint="@string/isBaslangicSaat"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIsDuzenleTarih" />
+
+    <EditText
+        android:id="@+id/txtIsDuzenleSaatBitisi"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@drawable/kan_grubu_btn_design"
+        android:ems="10"
+        android:gravity="center|left"
+        android:hint="@string/isBitisSaat"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIsDuzenleSaatBaslangici" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

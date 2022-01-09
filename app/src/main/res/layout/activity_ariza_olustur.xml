@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ArizaOlusturActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/arizaOlusturLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnArizaOlusturBaslikIcon"
+            android:layout_width="@dimen/iconBoyut"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:background="@color/logoRengi"
+            android:drawableLeft="@drawable/left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnArizaOlusturBaslik"
+            android:layout_width="@dimen/butonBoyut"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:background="@color/logoRengi"
+            android:paddingRight="@dimen/btnProfilBaslikPaddingRight"
+            android:text="@string/arizaOlusturButon"
+            android:textColor="@color/formRengi"
+            android:textSize="@dimen/formYaziBoyut"
+
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnProfilBaslikIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtArizaOlusturHatKod"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:ems="10"
+            android:hint="@string/arizaOlusturHatKodunuSeciniz"
+            android:inputType="textPersonName"
+            android:background="@drawable/kan_grubu_btn_design"
+            android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textColor="@color/yaziRengi"
+            android:textSize="@dimen/formYaziOrtaBoyut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnArizaOlusturBaslik"
+            tools:text="@string/arizaOlusturHatKodunuSeciniz" />
+
+        <EditText
+            android:id="@+id/txtArizaOlusturHatIstikamet"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:textStyle="bold"
+
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/kan_grubu_btn_design"
+            android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+            android:textAlignment="textStart"
+            android:textColor="@color/yaziRengi"
+            android:textSize="@dimen/formYaziOrtaBoyut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtArizaOlusturHatKod"
+            tools:text="@string/arizaOlusturHatIstikametiniSeciniz"
+            android:hint="@string/arizaOlusturHatIstikametiniSeciniz"/>
+
+        <EditText
+            android:id="@+id/txtArizaOlusturArizaBaslik"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:backgroundTint="@color/logoRengi"
+            android:textSize="@dimen/formYaziOrtaBoyut"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+            android:textStyle="bold"
+            android:textColor="@color/yaziRengi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtArizaOlusturHatIstikamet"
+            tools:text="@string/arizaOlusturArizaBasligiGiriniz"
+            android:hint="@string/arizaOlusturArizaBasligiGiriniz"/>
+
+        <EditText
+            android:id="@+id/txtArizaOlusturArizaAciklama"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:backgroundTint="@color/logoRengi"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/formYaziOrtaBoyut"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+            android:textColor="@color/yaziRengi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtArizaOlusturArizaBaslik"
+            tools:text="@string/arizaOlusturArizaAciklamasiGiriniz"
+            android:hint="@string/arizaOlusturArizaAciklamasiGiriniz"/>
+
+        <Button
+            android:id="@+id/btnArizaOlustur"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:background="@color/logoRengi"
+            android:text="@string/arizaOlusturButon"
+            android:textColor="@color/formRengi"
+            android:textSize="@dimen/formYaziBoyut"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

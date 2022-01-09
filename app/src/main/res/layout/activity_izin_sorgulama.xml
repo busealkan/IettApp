@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.IzinSorgulamaActivity">
+    <Button
+        android:id="@+id/btnIzinSorgulaBaslik"
+        android:layout_width="@dimen/txtBuyukWidthBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:text="@string/izinSorgula"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnIzinSorgulaBaslikIcon"
+        android:layout_width="@dimen/iconBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:drawableLeft="@drawable/left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <EditText
+        android:id="@+id/txtIzinSorgulaSicilArama"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@drawable/kan_grubu_btn_design"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+        android:hint="@string/izinSilinecekSicilTools"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIzinSorgulaBaslik" />
+
+    <Button
+        android:id="@+id/btnIzinSorgulaTarih"
+        android:layout_width="313dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@drawable/kan_grubu_btn_design"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+        android:text="@string/toolsSorgulanacakIzinTarihiniSeciniz"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIzinSorgulaSicilArama" />
+
+    <Button
+        android:id="@+id/btnIzinSorgulaAra"
+        android:layout_width="98dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@drawable/kan_grubu_btn_design"
+        android:text="@string/araButon"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIzinSorgulaSicilArama" />
+
+    <Button
+        android:id="@+id/btnIzinSorgulaSicilBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/sicilButon"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIzinSorgulaTarih" />
+
+    <Button
+        android:id="@+id/btnIzinSorgulaAdSoyadBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/adSoyad"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIzinSorgulaSicilBaslik" />
+
+    <Button
+        android:id="@+id/btnIzinSorgulaIzinTurBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/izinTuru"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIzinSorgulaAdSoyadBaslik" />
+
+    <Button
+        android:id="@+id/btnIzinSorgulaIzinBaslangicTarihiBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/izinTarihHeight"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/izinBaslangicTarihi"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIzinSorgulaIzinTurBaslik" />
+
+    <Button
+        android:id="@+id/btnIzinSorgulaIzinBitisTarihiBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/izinTarihHeight"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/izinBitisTarihi"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIzinSorgulaIzinBaslangicTarihiBaslik" />
+
+    <Button
+        android:id="@+id/btnIzinSorgulaIzinGunBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/izinGunSayisi"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIzinSorgulaIzinBitisTarihiBaslik" />
+
+    <TextView
+        android:id="@+id/txtIzinSorgulaSicil"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:backgroundTint="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:text="@string/sicilButon"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIzinSorgulaTarih" />
+
+    <TextView
+        android:id="@+id/txtIzinSorgulaAdSoyad"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:backgroundTint="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIzinSorgulaSicil"
+        android:text="@string/adSoyad" />
+
+    <TextView
+        android:id="@+id/txtIzinSorgulaIzinTuru"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:backgroundTint="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:text="@string/izinTuru"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIzinSorgulaAdSoyad" />
+
+    <TextView
+        android:id="@+id/txtIzinSorgulaIzinBaslangicTarihi"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/izinTarihHeight"
+        android:backgroundTint="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIzinSorgulaIzinTuru"
+        android:text="@string/izinBaslangicTarihi" />
+
+    <TextView
+        android:id="@+id/txtIzinSorgulaIzinBitisTarihi"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/izinTarihHeight"
+        android:backgroundTint="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIzinSorgulaIzinBaslangicTarihi"
+        android:text="@string/izinBitisTarihi" />
+
+    <TextView
+        android:id="@+id/txtIzinSorgulaIzinGunSayisi"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:backgroundTint="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIzinSorgulaIzinBitisTarihi"
+        android:text="@string/izinGunSayisi" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

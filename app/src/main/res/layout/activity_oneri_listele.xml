@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OneriListeleActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:id="@+id/btnOnerilerBaslik"
+                    android:layout_width="@dimen/txtBuyukWidthBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/logoRengi"
+                    android:gravity="center"
+                    android:text="@string/oneriler"
+                    android:textColor="@color/formRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnOnerilerAddIcon"
+                    android:layout_width="@dimen/addIconBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/logoRengi"
+                    android:drawableRight="@drawable/add"
+                    android:textColor="@color/formRengi"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnOnerilerLeftIcon"
+                    android:layout_width="@dimen/iconBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/logoRengi"
+                    android:drawableLeft="@drawable/left"
+                    android:textColor="@color/formRengi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@string/icon" />
+
+                <ListView
+                    android:id="@+id/listViewOneriler"
+                    android:layout_width="409dp"
+                    android:layout_height="0dp"
+                    android:paddingTop="@dimen/arizalarimListViewPaddingTop"
+                    android:paddingBottom="@dimen/arizalarimListViewPaddingBottom"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnOnerilerBaslik"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:listitem="@layout/cardview_oneriler" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

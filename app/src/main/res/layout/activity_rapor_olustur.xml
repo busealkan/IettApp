@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RaporOlusturActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/raporOlusturLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnRaporOlusturBaslikIcon"
+            android:layout_width="@dimen/iconBoyut"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:background="@color/logoRengi"
+            android:drawableLeft="@drawable/left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnRaporOlusturBaslik"
+            android:layout_width="@dimen/butonBoyut"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:background="@color/logoRengi"
+            android:paddingRight="@dimen/btnProfilBaslikPaddingRight"
+            android:text="@string/raporOlusturButon"
+            android:textColor="@color/formRengi"
+            android:textSize="@dimen/formYaziBoyut"
+
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnProfilBaslikIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtRaporOlusturSicil"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:background="@drawable/kan_grubu_btn_design"
+            android:ems="10"
+            android:hint="@string/raporOlusturSicilGiriniz"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+            android:textAlignment="textStart"
+            android:textColor="@color/yaziRengi"
+            android:textSize="@dimen/formYaziOrtaBoyut"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnRaporOlusturBaslik"
+            tools:text="@string/raporOlusturSicilGiriniz" />
+
+        <EditText
+            android:id="@+id/txtRaporOlusturRaporBaslik"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:backgroundTint="@color/logoRengi"
+            android:textSize="@dimen/formYaziOrtaBoyut"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+            android:textStyle="bold"
+            android:textColor="@color/yaziRengi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRaporOlusturSicil"
+            tools:text="@string/raporOlusturRaporBasligiGiriniz"
+            android:hint="@string/raporOlusturRaporBasligiGiriniz"/>
+
+        <EditText
+            android:id="@+id/txtRaporOlusturRaporAciklama"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:backgroundTint="@color/logoRengi"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/formYaziOrtaBoyut"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+            android:textColor="@color/yaziRengi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRaporOlusturRaporBaslik"
+            tools:text="@string/raporOlusturRaporAciklamasiGiriniz"
+            android:hint="@string/raporOlusturRaporAciklamasiGiriniz"/>
+
+        <Button
+            android:id="@+id/btnRaporOlustur"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:background="@color/logoRengi"
+            android:text="@string/raporOlusturButon"
+            android:textColor="@color/formRengi"
+            android:textSize="@dimen/formYaziBoyut"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

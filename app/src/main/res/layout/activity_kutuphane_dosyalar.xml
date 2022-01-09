@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.KutuphaneDosyalarActivity">
+
+    <Button
+        android:id="@+id/btnKutuphaneDosyalarBaslikIcon"
+        android:layout_width="@dimen/iconBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:drawableLeft="@drawable/left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnKutuphaneDosyalarBaslik"
+        android:layout_width="@dimen/butonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:paddingRight="@dimen/btnProfilBaslikPaddingRight"
+        android:text="@string/kutuphane"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnKutuphaneDosyalarBilgiler"
+        android:layout_width="206dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:text="@string/kutuphaneBilgiler"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziOrtaBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnKutuphaneDosyalarDosyalar"
+        app:layout_constraintTop_toBottomOf="@+id/btnKutuphaneDosyalarBaslik" />
+
+    <Button
+        android:id="@+id/btnKutuphaneDosyalarDosyalar"
+        android:layout_width="206dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/kutuphaneButon"
+        android:text="@string/kutuphaneDosyalar"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziOrtaBoyut"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKutuphaneDosyalarBaslikIcon" />
+
+    <ListView
+        android:id="@+id/listViewKutuphaneDosyalar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnKutuphaneDosyalarDosyalar"
+        tools:layout_editor_absoluteX="95dp"
+        tools:listitem="@layout/cardview_dosyalar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

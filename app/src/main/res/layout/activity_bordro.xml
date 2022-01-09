@@ -1,0 +1,2744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAllCaps="false"
+
+    tools:context=".activities.BordroActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textSize="@dimen/formYaziOrtaBoyut"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/btnBordroBaslik"
+                    android:layout_width="@dimen/txtBuyukWidthBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/logoRengi"
+                    android:text="@string/bordroButon"
+                    android:textColor="@color/formRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/btnBordroBaslikIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnBordroBaslikIcon"
+                    android:layout_width="@dimen/iconBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/logoRengi"
+                    android:drawableLeft="@drawable/left"
+                    android:text="Button"
+                    android:textColor="@color/formRengi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnBordroTarih"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@drawable/kan_grubu_btn_design"
+                    android:ems="10"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+                    android:text="@string/bordroTarihTools"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroBaslik" />
+
+                <Button
+                    android:id="@+id/btnBordroTur"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@drawable/kan_grubu_btn_design"
+                    android:ems="10"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+                    android:text="@string/bordroTurSeciniz"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroTarih" />
+
+                <Button
+                    android:id="@+id/btnBordroAra"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/logoRengi"
+                    android:text="@string/araButon"
+                    android:textColor="@color/formRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroTur" />
+
+                <TextView
+                    android:id="@+id/txtBordroKisiselBilgiler"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@drawable/kan_grubu_btn_design"
+                    android:gravity="center"
+                    android:text="@string/bordroKisiselBilgiler"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroAra" />
+
+                <Button
+                    android:id="@+id/btnBordroAd"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroAd"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKisiselBilgiler" />
+
+                <TextView
+                    android:id="@+id/txtBordroAd"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroAd"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKisiselBilgiler"
+                    tools:text="@string/ad" />
+
+                <Button
+                    android:id="@+id/btnBordroSicil"
+                    android:textAllCaps="false"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSicil"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroAd" />
+
+                <Button
+                    android:id="@+id/btnBordroSskNo"
+                    android:textAllCaps="false"
+
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSskNo"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroSicil" />
+
+                <Button
+                    android:id="@+id/btnBordroUnvani"
+                    android:textAllCaps="false"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroUnvani"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroSskNo" />
+
+                <Button
+                    android:id="@+id/btnBordroSaatUcreti"
+                    android:textAllCaps="false"
+
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSaatUcreti"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUnvani" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcret"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@drawable/kan_grubu_btn_design"
+                    android:gravity="center"
+                    android:text="@string/bordroUcret"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroSaatUcreti" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclar"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@drawable/kan_grubu_btn_design"
+                    android:gravity="center"
+                    android:text="@string/bordroKazanclar"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroYasalKesintiler"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@drawable/kan_grubu_btn_design"
+                    android:gravity="center"
+                    android:text="@string/bordroYasalKesintiler"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarAgi" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintiler"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@drawable/kan_grubu_btn_design"
+                    android:gravity="center"
+                    android:text="@string/bordroOzelKesintiler"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroYasalKesintilerSendikaKesintisi" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretSSkNoId"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSskNoId"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcret" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretGunVeSaatToplamUcret"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroGunVeSaatToplamUcret"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretSSkNoId" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretAylikVergiMatrahi"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroAylikVergiMatrahi"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretAylikSigortaMatrahi" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretHayatSigortasi"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroHayatSigortasi"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretAylikVergiMatrahi" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretEngelliIndirimi"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroEngelliIndirimi"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretHayatSigortasi" />
+
+                <Button
+                    android:id="@+id/btnBordroIsverenIssizlik"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:textAllCaps="false"
+                    android:text="@string/ad"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretEngelliIndirimi" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretYasalKesintiToplami"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroYasalKesintiToplami"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroIsverenIssizlik" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarYillikUcretliIzinSaat"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroYillikUcretliIzinSaat"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarMukabilCalismaTutar" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarMukabilCalismaTutar"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroMukabilCalismaTutar"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarDinlenmeliCalismaTutar" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarDinlenmeliCalismaTutar"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroDinlenmeliCalismaTutar"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarChttAltiGunTutar" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarChttAltiGunTutar"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroKesintilerToplami"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarFazlaMesaiTutarYuzdeUcYuz" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarFazlaMesaiTutarYuzdeUcYuz"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:textAllCaps="false"
+                    android:text="@string/bordroFazlaMesaiTutarYuzdeUcYuz"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarFazlaMesaiTutarYuzdeIkiYuz" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarFazlaMesaiTutarYuzdeIkiYuz"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroFazlaMesaiTutarYuzdeIkiYuz"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarFazlaMesaiTutarYuzdeYuz" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarFazlaMesaiTutarYuzdeYuz"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroFazlaMesaiTutarYuzdeYuz"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarHaftaTatiliTutar" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarHaftaTatiliTutar"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroHaftaTatiliTutar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarHaftaTatiliGun" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarHaftaTatiliGun"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:textAllCaps="false"
+                    android:text="@string/bordroHaftaTatiliGun"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarVardiyaZammiSaat" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarVardiyaZammiSaat"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:textAllCaps="false"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroVardiyaZammiSaat"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarNormalMesaiSaat" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarNormalMesaiSaat"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:textAllCaps="false"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroNormalMesaiSaat"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarSskNoId" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarSskNoId"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSskNoId"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclar" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarNormalMesaiGun"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroNormalMesaiGun"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarSskNoId"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclar" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretKesintilerToplami"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroKesintilerToplami"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretYasalKesintiToplami" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretIsverenIssizlik"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:textAllCaps="false"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroIsverenIssizlik"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretEngelliIndirimi" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretAylikSigortaMatrahi"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroAylikSigortaMatrahi"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretGunVeSaatToplamUcret" />
+
+                <Button
+                    android:id="@+id/btnBordroSoyad"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:textAllCaps="false"
+                    android:text="@string/bordroSoyad"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroAd"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKisiselBilgiler" />
+
+                <Button
+                    android:id="@+id/btnBordroIsYeri"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:textAllCaps="false"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroIsYeri"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroSicil"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroSoyad" />
+
+                <Button
+                    android:id="@+id/btnBordroSskTescil"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSskTescil"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroSskNo"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroIsYeri" />
+
+                <Button
+                    android:id="@+id/btnBordroGrup"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:textAllCaps="false"
+                    android:text="@string/bordroGrup"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroUnvani"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroSskTescil" />
+
+                <Button
+                    android:id="@+id/btnBordroSigortaGunu"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSigortaGunu"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroSaatUcreti"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroGrup" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretUcretToplam"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroUcretToplam"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroUcretGunVeSaatToplamUcret"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretNetUcret" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretSgkTavaniniAsanMiktar"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSgkTavaniniAsanMiktar"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroUcretAylikSigortaMatrahi"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretUcretToplam" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretYillikTgvm"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroYillikTgvm"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroUcretAylikVergiMatrahi"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretSgkTavaniniAsanMiktar" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretAskerlikBorclari"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroAskerlikBorclari"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroUcretHayatSigortasi"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretYillikTgvm" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretUcretMaliyeti"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroUcretMaliyeti"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroUcretIsverenIssizlik"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretIsverenSsk" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretOzelKesintiToplami"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroOzelKesintiToplami"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroUcretYasalKesintiToplami"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretUcretMaliyeti" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretIsverenSsk"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroIsverenSsk"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroUcretEngelliIndirimi"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroUcretAskerlikBorclari" />
+
+                <Button
+                    android:id="@+id/btnBordroUcretNetUcret"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroNetUcret"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroUcretSSkNoId"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcret" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretAylikSigortaMatrahi"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretAylikSigortaMatrahi"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretGunVeSaatToplamUcret"
+                    tools:text="@string/bordroAylikSigortaMatrahi" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretEngelliIndirimi"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretEngelliIndirimi"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretHayatSigortasi"
+                    tools:text="@string/bordroEngelliIndirimi" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretIsverenIssizlik"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroIsverenIssizlik"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretEngelliIndirimi"
+                    tools:text="@string/bordroIsverenIssizlik" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretYasalKesintiToplami"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretYasalKesintiToplami"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretIsverenIssizlik"
+                    tools:text="@string/bordroYasalKesintiToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarVardiyaZammiSaat"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarVardiyaZammiSaat"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarNormalMesaiSaat"
+                    tools:text="@string/bordroVardiyaZammiSaat" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarHaftaTatiliTutar"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarHaftaTatiliTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarHaftaTatiliGun"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarFazlaMesaiTutarYuzdeUcYuz"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarFazlaMesaiTutarYuzdeUcYuz"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarFazlaMesaiTutarYuzdeIkiYuz"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarSosyalIzinSaat"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarSosyalIzinSaat"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarHastalikVeIstIzniTutar"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarHasarIade"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarHasarIade"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarCezaIade"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarNetIlave"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarNetIlave"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarMuhtelifEksi"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarSosyalPaket"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarSosyalPaket"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarNetIlave"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroYasalKesintilerIssizlikSigortasi"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroYasalKesintilerIssizlikSigortasi"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroYasalKesintilerSskNoId"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroYasalKesintilerSskNoId"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroYasalKesintilerSskNoId"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroYasalKesintiler"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintilerVergiSskBorcu"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroOzelKesintilerVergiSskBorcu"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintilerKres"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintilerKres"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroOzelKesintilerKres"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintilerKefalet"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintilerKefalet"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroOzelKesintilerKefalet"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintilerTrafikBorcu"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintilerTrafikBorcu"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroOzelKesintilerTrafikBorcu"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintilerHasar"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintilerHasar"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroOzelKesintilerHasar"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintilerHaciz"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintilerHaciz"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroOzelKesintilerHaciz"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintilerSskNoId"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintilerSskNoId"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroOzelKesintilerSskNoId"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintiler"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroYasalKesintilerDamgaPulu"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroYasalKesintilerDamgaPulu"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroYasalKesintilerIssizlikSigortasi"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarMuhtelifEksi"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarMuhtelifEksi"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarHasarIade"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarCezaIade"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarCezaIade"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarUcretsizIzinTutar"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarUcretsizIzinTutar"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarUcretsizIzinTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarUcretsizIzinGun"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarUcretsizIzinGun"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarUcretsizIzinGun"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarSosyalIzinSaat"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarHastalikVeIstIzniTutar"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:textAllCaps="false"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarHastalikVeIstIzniTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarHastalıkVeIstIzniGun"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarHastalıkVeIstIzniGun"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarHastalıkVeIstIzniGun"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarYillikUcretliIzinSaat"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarYillikUcretliIzinSaat"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarYillikUcretliIzinSaat"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarMukabilCalismaTutar"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarMukabilCalismaTutar"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarMukabilCalismaTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarDinlenmeliCalismaTutar"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarDinlenmeliCalismaTutar"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarDinlenmeliCalismaTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarChttAltiGunTutar"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarChttAltiGunTutar"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarChttAltiGunTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarFazlaMesaiTutarYuzdeUcYuz"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarFazlaMesaiTutarYuzdeIkiYuz"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarFazlaMesaiTutarYuzdeIkiYuz"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarFazlaMesaiTutarYuzdeYuz"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarFazlaMesaiTutarYuzdeYuz"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarFazlaMesaiTutarYuzdeYuz"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarHaftaTatiliTutar"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarHaftaTatiliGun"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarHaftaTatiliGun"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarVardiyaZammiSaat"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarNormalMesaiSaat"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarNormalMesaiSaat"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarSskNoId"
+                    tools:text="@string/bordroNormalMesaiSaat" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarSskNoId"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarSskNoId"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclar"
+                    tools:text="@string/bordroSskNoId" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarNormalMesaiGun"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarNormalMesaiGun"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclar"
+                    tools:text="@string/bordroNormalMesaiGun" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretKesintilerToplami"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretKesintilerToplami"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretYasalKesintiToplami"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretHayatSigortasi"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretHayatSigortasi"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretAylikVergiMatrahi"
+                    tools:text="@string/bordroHayatSigortasi" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretAylikVergiMatrahi"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretAylikVergiMatrahi"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretAylikSigortaMatrahi"
+                    tools:text="@string/bordroAylikVergiMatrahi" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretGunVeSaatToplamUcret"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretGunVeSaatToplamUcret"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretSSkNoId"
+                    tools:text="@string/bordroGunVeSaatToplamUcret" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretSSkNoId"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretSSkNoId"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcret"
+                    tools:text="@string/bordroSskNoId" />
+
+                <TextView
+                    android:id="@+id/txtBordroSicil"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroSicil"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroAd"
+                    tools:text="@string/bordroSicil" />
+
+                <TextView
+                    android:id="@+id/txtBordroSskNo"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroSskNo"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroSicil"
+                    tools:text="@string/bordroSskNo" />
+
+                <TextView
+                    android:id="@+id/txtBordroUnvani"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUnvani"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroSskNo"
+                    tools:text="@string/bordroUnvani" />
+
+                <TextView
+                    android:id="@+id/txtBordroSaatUcreti"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroSaatUcreti"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUnvani"
+                    tools:text="@string/bordroSaatUcreti" />
+
+                <TextView
+                    android:id="@+id/txtBordroSoyad"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroSoyad"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKisiselBilgiler"
+                    tools:text="@string/bordroSoyad" />
+
+                <TextView
+                    android:id="@+id/txtBordroIsYeri"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroIsYeri"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroSoyad"
+                    tools:text="@string/bordroIsYeri" />
+
+                <TextView
+                    android:id="@+id/txtBordroSskTescil"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroSskTescil"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroIsYeri"
+                    tools:text="@string/bordroSskTescil" />
+
+                <TextView
+                    android:id="@+id/txtBordroGrup"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroGrup"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroSskTescil"
+                    tools:text="@string/bordroGrup" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretAskerlikBorclari"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretAskerlikBorclari"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretYillikTgvm"
+                    tools:text="@string/bordroAskerlikBorclari" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretIsverenSsk"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretIsverenSsk"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretAskerlikBorclari"
+                    tools:text="@string/bordroIsverenSsk" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretUcretMaliyeti"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretUcretMaliyeti"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretIsverenSsk"
+                    tools:text="@string/bordroUcretMaliyeti" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretOzelKesintiToplami"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretOzelKesintiToplami"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretUcretMaliyeti"
+                    tools:text="@string/bordroOzelKesintiToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretYillikTgvm"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretYillikTgvm"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretSgkTavaniniAsanMiktar"
+                    tools:text="@string/bordroSigortaGunu" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretSgkTavaniniAsanMiktar"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretSgkTavaniniAsanMiktar"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretUcretToplam"
+                    tools:text="@string/bordroSgkTavaniniAsanMiktar" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretUcretToplam"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretUcretToplam"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcretNetUcret"
+                    tools:text="@string/bordroUcretToplam" />
+
+                <TextView
+                    android:id="@+id/txtBordroUcretNetUcret"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroUcretHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroUcretNetUcret"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroUcret"
+                    tools:text="@string/bordroNetUcret" />
+
+                <TextView
+                    android:id="@+id/txtBordroSigortaGunu"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroSigortaGunu"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroGrup"
+                    tools:text="@string/bordroSigortaGunu" />
+
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarHastalıkVeIstIzniGun"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroHastalikVeIstIzniGun"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarYillikUcretliIzinSaat" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarHastalikVeIstIzniTutar"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroHastalikVeIstIzniTutar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarHastalıkVeIstIzniGun" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarSosyalIzinSaat"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSosyalIzinSaat"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textAllCaps="false"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarHastalikVeIstIzniTutar" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarUcretsizIzinGun"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroUcretsizIzinGun"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarSosyalIzinSaat" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarUcretsizIzinTutar"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroUcretsizIzinTutar"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarUcretsizIzinGun" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarCezaIade"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroCezaIade"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarUcretsizIzinTutar" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarHasarIade"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroHasarIade"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarCezaIade" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarMuhtelifEksi"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroMuhtelifEksi"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarHasarIade" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarNetIlave"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:textAllCaps="false"
+                    android:text="@string/bordroNetIlave"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarMuhtelifEksi" />
+
+
+                <Button
+                    android:id="@+id/btnBordroOzelKesintilerVergiSskBorcu"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroVergiSskBorcu"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroOzelKesintilerKres" />
+
+                <Button
+                    android:id="@+id/btnBordroOzelKesintilerKres"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroKres"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroOzelKesintilerKefalet" />
+
+                <Button
+                    android:id="@+id/btnBordroOzelKesintilerKefalet"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroKefalet"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroOzelKesintilerTrafikBorcu" />
+
+                <Button
+                    android:id="@+id/btnBordroOzelKesintilerTrafikBorcu"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroTrafikBorcu"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroOzelKesintilerHasar" />
+
+                <Button
+                    android:id="@+id/btnBordroOzelKesintilerHasar"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroHasar"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroOzelKesintilerHaciz" />
+
+                <Button
+                    android:id="@+id/btnBordroOzelKesintilerHaciz"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:textAllCaps="false"
+                    android:text="@string/bordroHaciz"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroOzelKesintilerSskNoId" />
+
+                <Button
+                    android:id="@+id/btnBordroOzelKesintilerSskNoId"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSskNoId"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintiler" />
+
+                <Button
+                    android:id="@+id/btnBordroYasalKesintilerDamgaPulu"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroDamgaPulu"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroYasalKesintilerIssizlikSigortasi" />
+
+                <Button
+                    android:id="@+id/btnBordroYasalKesintilerIssizlikSigortasi"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroIssizlikSigortasi"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroYasalKesintilerSskNoId" />
+
+                <Button
+                    android:id="@+id/btnBordroYasalKesintilerSskNoId"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:textAllCaps="false"
+                    android:text="@string/bordroSskNoId"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroYasalKesintiler" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarSosyalPaket"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:textAllCaps="false"
+                    android:text="@string/bordroSosyalPaket"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarNetIlave" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarNormalMesaiTutar"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroNormalMesaiTutar"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarNormalMesaiSaat"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarNormalMesaiGun" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarNormalMesaiTutar"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:textAllCaps="false"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarNormalMesaiTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarNormalMesaiGun"
+                    tools:text="@string/bordroNormalMesaiTutar" />
+
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarVardiyaZammiTutar"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:textAllCaps="false"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroVardiyaZammiTutar"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarVardiyaZammiSaat"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarNormalMesaiTutar" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarVardiyaZammiTutar"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarVardiyaZammiTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarNormalMesaiTutar"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarHaftaTatiliSaat"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroHaftaTatiliSaat"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarHaftaTatiliGun"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarVardiyaZammiTutar" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarHaftaTatiliSaat"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarHaftaTatiliSaat"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarVardiyaZammiTutar"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarFazlaMesaiSaatYuzdeYuz"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroFazlaMesaiSaatYuzdeYuz"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarHaftaTatiliTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarHaftaTatiliSaat" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarFazlaMesaiSaatYuzdeYuz"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarFazlaMesaiSaatYuzdeYuz"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarHaftaTatiliSaat"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarMuhtelifArti"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroMuhtelifArti"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarHasarIade"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarHacizIade" />
+
+                <Button
+                    android:id="@+id/btnBordroOzelKesintilerBerber"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroBerber"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroOzelKesintilerKres"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroOzelKesintilerTelefon" />
+
+                <Button
+                    android:id="@+id/btnBordroOzelKesintilerTelefon"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroTelefon"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroOzelKesintilerKefalet"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroOzelKesintilerMuhtelifBorc" />
+
+                <Button
+                    android:id="@+id/btnBordroOzelKesintilerMuhtelifBorc"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroMuhtelifBorc"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroOzelKesintilerTrafikBorcu"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroOzelKesintilerCeza" />
+
+                <Button
+                    android:id="@+id/btnBordroOzelKesintilerCeza"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroCeza"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroOzelKesintilerHasar"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroOzelKesintilerNafaka" />
+
+                <Button
+                    android:id="@+id/btnBordroOzelKesintilerNafaka"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroNafaka"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroOzelKesintilerHaciz"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroOzelKesintilerAvans" />
+
+                <Button
+                    android:id="@+id/btnBordroOzelKesintilerAvans"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroAvans"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroOzelKesintilerSskNoId"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintiler" />
+
+                <Button
+                    android:id="@+id/btnBordroYasalKesintilerSendikaKesintisi"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSendikaKesintisi"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroYasalKesintilerDamgaPulu"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroYasalKesintilerGelirVergisi" />
+
+                <Button
+                    android:id="@+id/btnBordroYasalKesintilerGelirVergisi"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroGelirVergisi"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroYasalKesintilerIssizlikSigortasi"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroYasalKesintilerSigorta" />
+
+                <Button
+                    android:id="@+id/btnBordroYasalKesintilerSigorta"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSigorta"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroYasalKesintilerSskNoId"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroYasalKesintiler" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarAgi"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroAgi"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarSosyalPaket"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarNetIlave2" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarNetIlave2"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroNetIlave2"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarNetIlave"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarYemek" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarYemek"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="yemek"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarMuhtelifEksi"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarMuhtelifArti" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarHacizIade"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroHacizIade"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarCezaIade"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarYoneticiTazminati" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarYoneticiTazminati"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:textAllCaps="false"
+                    android:text="@string/bordroYoneticiTazminati"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarUcretsizIzinTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarUcretsizIzinSaat" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarUcretsizIzinSaat"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroUcretsizIzinSaat"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarUcretsizIzinGun"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarSosyalIzinTutar" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarSosyalIzinTutar"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:textAllCaps="false"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSosyalIzinTutar"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarSosyalIzinSaat"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarSosyalIzinGun" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarSosyalIzinGun"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroSosyalIzinGun"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarHastalikVeIstIzniTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarHastalikVeIstGunSaat" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarHastalikVeIstGunSaat"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroHastalikVeIstIzniSaat"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarHastalıkVeIstIzniGun"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarYillikUcretliIzinTutar" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarYillikUcretliIzinTutar"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroYillikUcretliIzinTutar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarYillikUcretliIzinSaat"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarYillikUcretliIzinGun" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarYillikUcretliIzinGun"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroYillikUcretliIzinGun"
+                    android:textAllCaps="false"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarMukabilCalismaTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarMukabilCalismaSaati" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarMukabilCalismaSaati"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroMukabilCalismaSaati"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarDinlenmeliCalismaTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarDinlenmeliCalismaSaati" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarDinlenmeliCalismaSaati"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:textAllCaps="false"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroDinlenmeliCalismaSaati"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarChttAltiGunTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarChttAltiGunSaat" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarChttAltiGunSaat"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:textAllCaps="false"
+                    android:text="@string/bordroKesintilerToplami"
+                    android:textColor="@color/logoRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarFazlaMesaiTutarYuzdeUcYuz"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarFazlaMesaiSaatYuzdeUcYuz" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarFazlaMesaiSaatYuzdeUcYuz"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroFazlaMesaiSaatYuzdeUcYuz"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarFazlaMesaiTutarYuzdeIkiYuz"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarFazlaMesaiSaatYuzdeIkiYuz" />
+
+                <Button
+                    android:id="@+id/btnBordroKazanclarFazlaMesaiSaatYuzdeIkiYuz"
+                    android:layout_width="@dimen/bordroButonBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/baslikButonRengi"
+                    android:text="@string/bordroFazlaMesaiSaatYuzdeIkiYuz"
+                    android:textColor="@color/logoRengi"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/txtBordroKazanclarFazlaMesaiTutarYuzdeYuz"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBordroKazanclarFazlaMesaiSaatYuzdeYuz" />
+
+                <TextView
+                    android:id="@+id/txtBordroYasalKesintilerSigorta"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroYasalKesintilerSigorta"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroYasalKesintiler"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintilerBerber"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroOzelKesintilerBerber"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintilerTelefon"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintilerTelefon"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroOzelKesintilerTelefon"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintilerMuhtelifBorc"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintilerMuhtelifBorc"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroOzelKesintilerMuhtelifBorc"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintilerCeza"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintilerCeza"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroOzelKesintilerCeza"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintilerNafaka"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintilerNafaka"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroOzelKesintilerNafaka"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintilerAvans"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroOzelKesintilerAvans"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroOzelKesintilerAvans"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroOzelKesintiler"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroYasalKesintilerSendikaKesintisi"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroYasalKesintilerSendikaKesintisi"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroYasalKesintilerGelirVergisi"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarAgi5"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroYasalKesintilerGelirVergisi"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroYasalKesintilerSigorta"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroYasalKesintilerGelirVergisi"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroYasalKesintilerGelirVergisi"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroYasalKesintilerSigorta"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarAgi"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarAgi"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarNetIlave2"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarNetIlave2"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarNetIlave2"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarYemek"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarYemek"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarYemek"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarMuhtelifArti"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarMuhtelifArti"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarMuhtelifArti"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarHacizIade"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarHacizIade"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarHacizIade"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarYoneticiTazminati"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarYoneticiTazminati"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarYoneticiTazminati"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarUcretsizIzinSaat"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarUcretsizIzinSaat"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarUcretsizIzinSaat"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarSosyalIzinTutar"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarSosyalIzinTutar"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarSosyalIzinTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarSosyalIzinGun"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarSosyalIzinGun"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarSosyalIzinGun"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarHastalikVeIstGunSaat"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarHastalikVeIstGunSaat"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarHastalikVeIstGunSaat"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarYillikUcretliIzinTutar"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarYillikUcretliIzinTutar"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarYillikUcretliIzinTutar"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarYillikUcretliIzinGun"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarYillikUcretliIzinGun"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarYillikUcretliIzinGun"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarMukabilCalismaSaati"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarMukabilCalismaSaati"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarMukabilCalismaSaati"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarDinlenmeliCalismaSaati"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarDinlenmeliCalismaSaati"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarDinlenmeliCalismaSaati"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarChttAltiGunSaat"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarChttAltiGunSaat"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarChttAltiGunSaat"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarFazlaMesaiSaatYuzdeUcYuz"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarFazlaMesaiSaatYuzdeUcYuz"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarFazlaMesaiSaatYuzdeUcYuz"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarFazlaMesaiSaatYuzdeIkiYuz"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+                <TextView
+                    android:id="@+id/txtBordroKazanclarFazlaMesaiSaatYuzdeIkiYuz"
+                    android:layout_width="@dimen/bordroTextBoyut"
+                    android:layout_height="@dimen/bordroKazancHeight"
+                    android:background="@color/formRengi"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/sicilYaziBoyut"
+                    app:layout_constraintStart_toEndOf="@+id/btnBordroKazanclarFazlaMesaiSaatYuzdeIkiYuz"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBordroKazanclarFazlaMesaiSaatYuzdeYuz"
+                    tools:text="@string/bordroKesintilerToplami" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

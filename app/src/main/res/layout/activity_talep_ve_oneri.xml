@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/talepVeOneriLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TalepVeOneriActivity">
+
+    <Button
+        android:id="@+id/btnTalepveOneri"
+        android:layout_width="@dimen/txtBuyukWidthBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:gravity="center"
+        android:text="@string/talepVeOneri"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTalepveOneriLeftIcon"
+        android:layout_width="@dimen/iconBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:drawableLeft="@drawable/left"
+        android:paddingLeft="5dp"
+        android:textColor="@color/formRengi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/icon" />
+
+    <Button
+        android:id="@+id/btnTalepEkle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:drawableRight="@drawable/rightkirmizi"
+        android:gravity="center|left"
+        android:paddingLeft="19dp"
+        android:text="@string/talepEkle"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalepveOneri" />
+
+    <Button
+        android:id="@+id/btnTaleplerim"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:drawableRight="@drawable/rightkirmizi"
+        android:gravity="center|left"
+        android:paddingLeft="19dp"
+        android:text="@string/taleplerim"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalepEkle" />
+
+    <Button
+        android:id="@+id/btnTalepler"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:drawableRight="@drawable/rightkirmizi"
+        android:gravity="center|left"
+        android:paddingLeft="19dp"
+        android:text="@string/talepler"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTaleplerim" />
+
+    <Button
+        android:id="@+id/btnOneriEkle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:drawableRight="@drawable/rightkirmizi"
+        android:gravity="center|left"
+        android:paddingLeft="19dp"
+        android:text="@string/oneriEkle"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalepler" />
+
+    <Button
+        android:id="@+id/btnOnerilerim"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:drawableRight="@drawable/rightkirmizi"
+        android:gravity="center|left"
+        android:paddingLeft="19dp"
+        android:text="@string/onerilerim"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOneriEkle" />
+
+    <Button
+        android:id="@+id/btnOneriler"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:drawableRight="@drawable/rightkirmizi"
+        android:gravity="center|left"
+        android:paddingLeft="19dp"
+        android:text="@string/oneriler"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOnerilerim" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/kanGrubuABRhPozitif"
+        android:title="@string/kanGrubuABRhPozitif"/>
+    <item
+        android:id="@+id/kanGrubuABRhNegatif"
+        android:title="@string/kanGrubuABRhNegatif"/>
+    <item
+        android:id="@+id/kanGrubuARhPozitif"
+        android:title="@string/kanGrubuARhPozitif"/>
+    <item
+        android:id="@+id/kanGrubuARhNegatif"
+        android:title="@string/kanGrubuARhNegatif"/>
+    <item
+        android:id="@+id/kanGrubuBRhPozitif"
+        android:title="@string/kanGrubuBRhPozitif"/>
+    <item
+        android:id="@+id/kanGrubuBRhNegatif"
+        android:title="@string/kanGrubuBRhNegatif"/>
+    <item
+        android:id="@+id/kanGrubu0RhPozitif"
+        android:title="@string/kanGrubu0RhPozitif"/>
+    <item
+        android:id="@+id/kanGrubu0RhNegatif"
+        android:title="@string/kanGrubu0RhNegatif"/>
+</menu>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OneriDetayActivity">
+
+    <Button
+        android:id="@+id/btnOneriRed"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="wrap_content"
+        android:background="@color/baslikButonRengi"
+        android:padding="@dimen/arizaOlusturTextPaddingLeft"
+        android:text="@string/oneriRed"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnOneriOnay"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="wrap_content"
+        android:background="@color/baslikButonRengi"
+        android:padding="@dimen/arizaOlusturTextPaddingLeft"
+        android:text="@string/oneriOnay"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtOneriDetayDurumu"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTalepSicilBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtOneriDetayOneri"
+        tools:text="@string/oneriDurumu" />
+
+    <TextView
+        android:id="@+id/txtOneriDetayOneri"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTalepSicilBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtOneriDetayTarih"
+        tools:text="@string/oneri" />
+
+    <TextView
+        android:id="@+id/txtOneriDetayTarih"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:enabled="false"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="date"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTalepSicilBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtOneriDetayBaslik"
+        tools:text="@string/tarihButon" />
+
+    <TextView
+        android:id="@+id/txtOneriDetayBaslik"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:enabled="false"
+        android:background="@color/formRengi"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTalepSicilBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtOneriDetayAdSoyad"
+        tools:text="@string/baslikButon" />
+
+    <TextView
+        android:id="@+id/txtOneriDetayAdSoyad"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:enabled="false"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTalepSicilBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtOneriDetaySicil"
+        tools:text="@string/adSoyad" />
+
+    <Button
+        android:id="@+id/btnOneriDetayDurumuBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/oneriDurumu"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOneriDetayTalepBaslik" />
+
+    <Button
+        android:id="@+id/btnOneriDetayTalepBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/oneri"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOneriDetayTarihBaslik" />
+
+    <Button
+        android:id="@+id/btnOneriDetayTarihBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/tarihButon"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOneriDetayBaslikBaslik" />
+
+    <Button
+        android:id="@+id/btnOneriDetayBaslikBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/baslikButon"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOneriDetayAdSoyadBaslik" />
+
+    <Button
+        android:id="@+id/btnOneriDetayAdSoyadBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/adSoyad"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOneriDetaySicilBaslik" />
+
+    <TextView
+        android:id="@+id/txtOneriDetaySicil"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:enabled="false"
+
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTalepSicilBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/btnOneriDetayBaslik"
+        tools:text="@string/sicilButon" />
+
+    <Button
+        android:id="@+id/btnOneriDetaySicilBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/sicilButon"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOneriDetayBaslikIcon" />
+
+    <Button
+        android:id="@+id/btnOneriDetayBaslik"
+        android:layout_width="@dimen/txtBuyukWidthBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:text="@string/oneriDetay"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOneriDetayBaslikIcon"
+        android:layout_width="@dimen/iconBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:drawableLeft="@drawable/left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

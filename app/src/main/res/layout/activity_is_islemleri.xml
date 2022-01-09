@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.IsIslemleriActivity">
+
+
+
+
+    <Button
+        android:id="@+id/btnIsListeIslemler"
+        android:layout_width="@dimen/txtBuyukWidthBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:gravity="center"
+        android:text="@string/isListeIslemleri"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnIsListeIslemlerLeftIcon"
+        android:layout_width="@dimen/iconBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:drawableLeft="@drawable/left"
+        android:paddingLeft="5dp"
+        android:textColor="@color/formRengi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/icon" />
+
+    <Button
+        android:id="@+id/btnIsOlusturma"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:drawableRight="@drawable/rightkirmizi"
+        android:gravity="center|left"
+        android:paddingLeft="19dp"
+        android:text="@string/isOlusturButon"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIsListeIslemler" />
+
+    <Button
+        android:id="@+id/btnIsSorgulama"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:drawableRight="@drawable/rightkirmizi"
+        android:gravity="center|left"
+        android:paddingLeft="19dp"
+        android:text="@string/isSorgula"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIsOlusturma" />
+
+    <Button
+        android:id="@+id/btnIsDuzenleme"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:drawableRight="@drawable/rightkirmizi"
+        android:gravity="center|left"
+        android:paddingLeft="19dp"
+        android:text="@string/isDuzenle"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIsSorgulama" />
+
+    <Button
+        android:id="@+id/btnIsSilme"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:drawableRight="@drawable/rightkirmizi"
+        android:gravity="center|left"
+        android:paddingLeft="19dp"
+        android:text="@string/isSil"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIsDuzenleme" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

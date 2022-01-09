@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logoBoyut">250dp</dimen>
+    <dimen name="formYaziBoyut">20dp</dimen>
+    <dimen name="formYaziOrtaBoyut">18dp</dimen>
+    <dimen name="formYaziKucukBoyut">15dp</dimen>
+
+    <dimen name="txtWidthBoyut">267dp</dimen>
+    <dimen name="txtBuyukWidthBoyut">413dp</dimen>
+    <dimen name="txtHeightBoyut">61dp</dimen>
+
+    <dimen name="iconBoyut">50dp</dimen>
+    <dimen name="kucukButonBoyut">261dp</dimen>
+    <dimen name="butonBoyut">362dp</dimen>
+    <dimen name="kenarlikBoyut">1dp</dimen>
+    <dimen name="addIconBoyut">67dp</dimen>
+
+    <dimen name="cardMargin">16dp</dimen>
+    <dimen name="cardTextBoyut">230dp</dimen>
+
+    <dimen name="talepOnizlemeBoyut">90dp</dimen>
+    <dimen name="baslikButonBoyut">283dp</dimen>
+    <dimen name="kucukbaslikButonBoyut">126dp</dimen>
+
+    <dimen name="logoGirisMargin">88dp</dimen>
+    <dimen name="txtGirisMargin">24dp</dimen>
+    <dimen name="sifremiUnuttumMargin">16dp</dimen>
+    <dimen name="btnGirisMargin">16dp</dimen>
+    <dimen name="btnGirisPadding">48dp</dimen>
+
+    <dimen name="txtKayitMarginLeft">75dp</dimen>
+    <dimen name="txtKayitMarginTop">3dp</dimen>
+    <dimen name="txtKayitMarginBottom">8dp</dimen>
+    <dimen name="txtKayitGirisMarginTop">-29dp</dimen>
+    <dimen name="txtKayitGirisMarginLeft">251dp</dimen>
+    <dimen name="txtKayitHesapVarMarginLeft">92dp</dimen>
+    <dimen name="btnKayitMarginLeft">78dp</dimen>
+    <dimen name="btnKayitPaddingRight">45dp</dimen>
+
+    <dimen name="logoSifremiUnuttumMargin">88dp</dimen>
+    <dimen name="txtSifremiUnuttumMarginTop">68dp</dimen>
+    <dimen name="btnSifremiUnuttumMarginTop">44dp</dimen>
+
+    <dimen name="anaSayfaLogo">105dp</dimen>
+    <dimen name="anaSayfaProfilFoto">100dp</dimen>
+    <dimen name="anaSayfaHosgeldinizMarginTop">8dp</dimen>
+    <dimen name="anaSayfaAdSoyadMarginTop">6dp</dimen>
+    <dimen name="anaSayfaHosgeldinizMarginRight">64dp</dimen>
+    <dimen name="anaSayfaAdSoyadMarginRight">62dp</dimen>
+
+    <dimen name="anaSayfaButonWidth">103dp</dimen>
+    <dimen name="anaSayfaButonHeight">105dp</dimen>
+    <dimen name="anaSayfaButonTextPadding">15dp</dimen>
+
+    <dimen name="adSoyadYaziBoyut">10dp</dimen>
+
+    <dimen name="sliderHeight">313dp</dimen>
+
+    <dimen name="txtProfilPaddingLeft">15dp</dimen>
+    <dimen name="btnProfilBaslikPaddingRight">30dp</dimen>
+    <dimen name="circleImage">100dp</dimen>
+
+
+    <dimen name="txtProfilEmailHeightBoyut">65dp</dimen>
+
+    <dimen name="txtProfilDegistirMarginTop">9dp</dimen>
+    <dimen name="txtProfilMarginTop">12dp</dimen>
+
+    <dimen name="txtProfilTarihSec">55dp</dimen>
+    <dimen name="txtProfilTarihSecMarginTop">20dp</dimen>
+    <dimen name="txtProfilTarihSecMarginRight">12dp</dimen>
+    <dimen name="txtProfilKanGrubuPaddinTop">11dp</dimen>
+
+    <dimen name="profilResmiPaddingLeft">15dp</dimen>
+
+    <dimen name="arizaOlusturTextPaddingLeft">15dp</dimen>
+
+    <dimen name="arizalarimListViewPaddingTop">12dp</dimen>
+    <dimen name="arizalarimListViewPaddingBottom">12dp</dimen>
+    <dimen name="txtArizaDetayHeightBoyut">91dp</dimen>
+
+
+    <dimen name="margin">10dp</dimen>
+    <dimen name="rcvMarginTop">60dp</dimen>
+    <dimen name="izinTarihHeight">73dp</dimen>
+
+    <dimen name="sicilYaziBoyut">16dp</dimen>
+
+    <dimen name="bordroButonBoyut">105dp</dimen>
+    <dimen name="bordroTextBoyut">104dp</dimen>
+
+    <dimen name="bordroKazancHeight">71dp</dimen>
+    <dimen name="bordroUcretHeight">71dp</dimen>
+
+    <dimen name="cezaBaslikWidth">136dp</dimen>
+
+
+
+
+
+</resources>

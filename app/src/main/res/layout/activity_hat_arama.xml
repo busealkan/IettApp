@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hatAramaLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HatAramaActivity">
+
+    <Button
+        android:id="@+id/btnHatAramaHatKoduBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/arizaHatKodu"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHatKodu" />
+
+    <Button
+        android:id="@+id/btnHatAramaHatTabelaBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/hatTabela"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHatAramaHatKoduBaslik" />
+
+    <Button
+        android:id="@+id/btnHatAramaHatIstikametBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/arizaHatIstikamet"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHatAramaHatTabelaBaslik" />
+
+    <Button
+        android:id="@+id/btnHatAramaArizaDurumuBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/arizaDurumu"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHatAramaArizaBaslikBaslik" />
+
+    <Button
+        android:id="@+id/btnHatAramaArizaSoforSicilBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/soforSicil"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHatAramaHatIstikametBaslik" />
+
+    <Button
+        android:id="@+id/btnHatAramaArizaBaslikBaslik"
+        android:layout_width="@dimen/kucukbaslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/baslikButonRengi"
+        android:text="@string/arizaBaslik"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHatAramaArizaSoforSicilBaslik" />
+
+    <TextView
+        android:id="@+id/txtHatAramaHatArizaDurumu"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:backgroundTint="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnHatAramaArizaDurumuBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtHatAramaHatArizaBaslik"
+        tools:text="@string/arizaDurumu" />
+
+    <TextView
+        android:id="@+id/txtHatAramaHatArizaBaslik"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:backgroundTint="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnHatAramaArizaBaslikBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtHatAramaSoforSicil"
+        tools:text="@string/arizaBaslik" />
+
+    <TextView
+        android:id="@+id/txtHatAramaSoforSicil"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:backgroundTint="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnHatAramaArizaSoforSicilBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtHatAramaHatIstikamet"
+        tools:text="@string/soforSicil" />
+
+    <TextView
+        android:id="@+id/txtHatAramaHatIstikamet"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:backgroundTint="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnHatAramaHatIstikametBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtHatAramaHatTabela"
+        tools:text="@string/arizaHatIstikamet" />
+
+    <TextView
+        android:id="@+id/txtHatAramaHatTabela"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:backgroundTint="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnHatAramaHatTabelaBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtHatAramaHatKodu"
+        tools:text="@string/hatTabela" />
+
+    <TextView
+        android:id="@+id/txtHatAramaHatKodu"
+        android:layout_width="@dimen/baslikButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:backgroundTint="@color/formRengi"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnHatAramaHatKoduBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/txtHatKodu"
+        tools:text="@string/arizaHatKodu" />
+
+    <Button
+        android:id="@+id/btnHatAra"
+        android:layout_width="70dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@drawable/kan_grubu_btn_design"
+        android:text="@string/araButon"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtHatKodu" />
+
+    <EditText
+        android:id="@+id/txtHatKodu"
+        android:layout_width="343dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@drawable/kan_grubu_btn_design"
+        android:ems="10"
+        android:gravity="center|left"
+        android:hint="@string/hatKodArama"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/arizaOlusturTextPaddingLeft"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHatAramaBaslik" />
+
+    <Button
+        android:id="@+id/btnHatAramaBaslik"
+        android:layout_width="@dimen/txtBuyukWidthBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:text="@string/hatArama"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnHatAramaBaslikIcon"
+        android:layout_width="@dimen/iconBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:drawableLeft="@drawable/left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

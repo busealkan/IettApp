@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/izinTurUcretsiz"
+        android:title="@string/izinTurUcretsiz"/>
+    <item
+        android:id="@+id/izinTurUcretli"
+        android:title="@string/izinTurUcretli"/>
+    <item
+        android:id="@+id/izinTurHafta"
+        android:title="@string/izinTurHafta"/>
+    <item
+        android:id="@+id/izinTurHastalik"
+        android:title="@string/izinTurHastalik"/>
+    <item
+        android:id="@+id/izinTurSosyal"
+        android:title="@string/izinTurSosyal"/>
+    <item
+        android:id="@+id/izinTurZorunlu"
+        android:title="@string/izinTurZorunlu"/>
+    <item
+        android:id="@+id/izinTurYillik"
+        android:title="@string/izinTurYillik"/>
+
+
+</menu>

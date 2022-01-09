@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfilActivity">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnProfilBaslikIcon"
+                    android:layout_width="@dimen/iconBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/logoRengi"
+                    android:drawableLeft="@drawable/left"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnProfilBaslik"
+                    android:layout_width="@dimen/butonBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:background="@color/logoRengi"
+                    android:paddingRight="@dimen/btnProfilBaslikPaddingRight"
+                    android:text="@string/profil"
+                    android:textColor="@color/formRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/btnProfilBaslikIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgProfilResmi"
+                    android:layout_width="@dimen/circleImage"
+                    android:layout_height="@dimen/circleImage"
+                    android:layout_marginTop="@dimen/txtProfilDegistirMarginTop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnProfilBaslik"
+                    android:src="@drawable/profildefault"/>
+
+
+                <Button
+                    android:id="@+id/btnProfilSicil"
+                    android:layout_width="@dimen/txtWidthBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:layout_marginTop="@dimen/txtProfilMarginTop"
+                    android:background="@drawable/kan_grubu_btn_design"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/txtProfilPaddingLeft"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/formYaziOrtaBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtProfilResimDegistir"
+                    tools:text="@string/profilSicil" />
+
+                <EditText
+                    android:id="@+id/txtProfilAd"
+                    android:layout_width="@dimen/txtWidthBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:layout_marginTop="@dimen/txtProfilMarginTop"
+                    android:backgroundTint="@color/logoRengi"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/txtProfilPaddingLeft"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/formYaziOrtaBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnProfilSicil"
+                    tools:text="@string/profilAd" />
+
+                <EditText
+                    android:id="@+id/txtProfilSoyad"
+                    android:layout_width="@dimen/txtWidthBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:layout_marginTop="@dimen/txtProfilMarginTop"
+                    android:backgroundTint="@color/logoRengi"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/txtProfilPaddingLeft"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/formYaziOrtaBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtProfilAd"
+                    tools:text="@string/profilSoyad" />
+
+                <EditText
+                    android:id="@+id/txtProfilEmail"
+                    android:layout_width="@dimen/txtWidthBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:layout_marginTop="@dimen/txtProfilMarginTop"
+                    android:backgroundTint="@color/logoRengi"
+                    android:gravity="center_vertical"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/txtProfilPaddingLeft"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/formYaziOrtaBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnProfilKanGrubu"
+                    tools:text="@string/profilEmail" />
+
+                <Button
+                    android:id="@+id/btnDegisiklikleriKaydet"
+                    android:layout_width="@dimen/txtWidthBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:layout_marginTop="@dimen/txtProfilMarginTop"
+                    android:layout_marginBottom="32dp"
+                    android:background="@color/logoRengi"
+                    android:text="@string/degisiklikleriKaydet"
+                    android:textColor="@color/formRengi"
+                    android:textSize="@dimen/formYaziBoyut"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtProfilEmail" />
+
+                <TextView
+                    android:id="@+id/txtProfilResimDegistir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/txtProfilDegistirMarginTop"
+                    android:text="@string/profilResimSeciniz"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgProfilResmi" />
+
+                <Button
+                    android:id="@+id/btnProfilDate"
+                    android:layout_width="@dimen/txtWidthBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:layout_centerInParent="true"
+
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/kan_grubu_btn_design"
+                    android:paddingLeft="@dimen/txtProfilPaddingLeft"
+                    android:text="@string/profilDogumTarihiSec"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/formYaziOrtaBoyut"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtProfilSoyad" />
+
+                <Button
+                    android:id="@+id/btnProfilKanGrubu"
+                    android:layout_width="@dimen/txtWidthBoyut"
+                    android:layout_height="@dimen/txtHeightBoyut"
+                    android:layout_marginTop="@dimen/txtProfilMarginTop"
+                    android:background="@drawable/kan_grubu_btn_design"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/txtProfilPaddingLeft"
+                    android:text="@string/kanGrubuSeciniz"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/yaziRengi"
+                    android:textSize="@dimen/formYaziOrtaBoyut"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnProfilDate" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

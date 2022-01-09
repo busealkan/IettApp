@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "721859028510",
+    "project_id": "busealkaniett",
+    "storage_bucket": "busealkaniett.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721859028510:android:6b08b7a0a1f7a088dc700f",
+        "android_client_info": {
+          "package_name": "com.h5190059.iett"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721859028510-3ngnnffanocd77o0oe63htb2vs3i3saa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx8-FPWg0wUIX8cgaYGdU8liqyAedbm6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721859028510-3ngnnffanocd77o0oe63htb2vs3i3saa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

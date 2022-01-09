@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sicilLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SicilActivity">
+
+    <Button
+        android:id="@+id/btnSicilBaslik"
+        android:layout_width="@dimen/txtBuyukWidthBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:gravity="center"
+        android:text="@string/sicil"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSicilLeftIcon"
+        android:layout_width="@dimen/iconBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        android:drawableLeft="@drawable/left"
+        android:paddingLeft="5dp"
+        android:textColor="@color/formRengi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/icon" />
+
+    <Button
+        android:id="@+id/btnCezalarim"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:drawableRight="@drawable/rightkirmizi"
+        android:gravity="center|left"
+        android:paddingLeft="19dp"
+        android:text="@string/cezalarim"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSicilBaslik" />
+
+    <Button
+        android:id="@+id/btnKazalarim"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:drawableRight="@drawable/rightkirmizi"
+        android:gravity="center|left"
+        android:paddingLeft="19dp"
+        android:text="@string/kazalarim"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUyariVeKararlarim" />
+
+    <Button
+        android:id="@+id/btnUyariVeKararlarim"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/formRengi"
+        android:drawableRight="@drawable/rightkirmizi"
+        android:gravity="center|left"
+        android:paddingLeft="19dp"
+        android:text="@string/uyariVeKararlarim"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCezalarim" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

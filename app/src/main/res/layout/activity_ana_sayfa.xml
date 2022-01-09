@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AnaSayfaActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbarAnaSayfa"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:background="@color/logoRengi"
+        app:titleTextColor="@color/formRengi" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/anaSayfaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtHosgeldiniz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/anaSayfaHosgeldinizMarginTop"
+            android:layout_marginRight="@dimen/anaSayfaHosgeldinizMarginRight"
+            android:text="@string/anaSayfaHosgeldiniz"
+            android:textColor="@color/formRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtKullaniciAdSoyad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/anaSayfaAdSoyadMarginTop"
+            android:layout_marginRight="@dimen/anaSayfaAdSoyadMarginRight"
+            android:textAllCaps="true"
+            android:textColor="@color/formRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtHosgeldiniz"
+            tools:text="@string/anaSayfaAdSoyad" />
+
+
+        <ImageView
+            android:id="@+id/imgProfilFoto"
+            android:layout_width="@dimen/anaSayfaProfilFoto"
+            android:layout_height="@dimen/txtHeightBoyut"
+            android:paddingLeft="@dimen/profilResmiPaddingLeft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imgSlider"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sliderHeight"
+            android:layout_marginTop="0dp"
+            app:iss_auto_cycle="true"
+            app:iss_delay="0"
+            app:iss_period="1000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgProfilFoto">
+
+        </com.denzcoskun.imageslider.ImageSlider>
+
+        <Button
+            android:id="@+id/btnAnaSayfaSicil"
+            android:layout_width="@dimen/anaSayfaButonWidth"
+            android:layout_height="@dimen/anaSayfaButonHeight"
+            android:background="@color/baslikButonRengi"
+            android:gravity="bottom|center|center_vertical"
+            android:paddingBottom="@dimen/anaSayfaButonTextPadding"
+            android:text="@string/sicilButon"
+            android:textColor="@color/logoRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgSlider" />
+
+        <Button
+            android:id="@+id/btnAnaSayfaArizaOlustur"
+            android:layout_width="@dimen/anaSayfaButonWidth"
+            android:layout_height="@dimen/anaSayfaButonHeight"
+            android:background="@color/baslikButonRengi"
+            android:gravity="bottom|center|center_vertical"
+            android:paddingBottom="@dimen/anaSayfaButonTextPadding"
+            android:text="@string/arizaOlusturButon"
+            android:textColor="@color/logoRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            app:layout_constraintStart_toEndOf="@+id/btnAnaSayfaTalepVeOneri"
+            app:layout_constraintTop_toBottomOf="@+id/btnAnaSayfaBordro" />
+
+        <Button
+            android:id="@+id/btnAnaSayfaRaporOlustur"
+            android:layout_width="@dimen/anaSayfaButonWidth"
+            android:layout_height="@dimen/anaSayfaButonHeight"
+            android:layout_marginStart="104dp"
+            android:background="@color/baslikButonRengi"
+            android:gravity="bottom|center|center_vertical"
+            android:paddingBottom="@dimen/anaSayfaButonTextPadding"
+            android:text="@string/raporOlusturButon"
+            android:textColor="@color/logoRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAnaSayfaRaporlar" />
+
+        <Button
+            android:id="@+id/btnAnaSayfaArizalarim"
+            android:layout_width="@dimen/anaSayfaButonWidth"
+            android:layout_height="@dimen/anaSayfaButonHeight"
+            android:background="@color/baslikButonRengi"
+            android:gravity="bottom|center|center_vertical"
+            android:paddingBottom="@dimen/anaSayfaButonTextPadding"
+            android:text="@string/arizalarimButon"
+            android:textColor="@color/logoRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAnaSayfaTalepVeOneri" />
+
+        <Button
+            android:id="@+id/btnAnaSayfaIzinIslemleri"
+            android:layout_width="@dimen/anaSayfaButonWidth"
+            android:layout_height="@dimen/anaSayfaButonHeight"
+            android:layout_marginTop="1dp"
+            android:background="@color/formRengi"
+            android:gravity="bottom|center|center_vertical"
+            android:paddingBottom="@dimen/anaSayfaButonTextPadding"
+            android:text="@string/izinIslemleri"
+            android:textColor="@color/logoRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAnaSayfaArizalarim" />
+
+        <Button
+            android:id="@+id/btnAnaSayfaBordro"
+            android:layout_width="@dimen/anaSayfaButonWidth"
+            android:layout_height="@dimen/anaSayfaButonHeight"
+            android:background="@color/formRengi"
+            android:gravity="bottom|center|center_vertical"
+            android:paddingBottom="@dimen/anaSayfaButonTextPadding"
+            android:text="@string/bordroButon"
+            android:textColor="@color/logoRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            app:layout_constraintStart_toEndOf="@+id/btnAnaSayfaSicil"
+            app:layout_constraintTop_toBottomOf="@+id/imgSlider" />
+
+        <Button
+            android:id="@+id/btnAnaSayfaTalepVeOneri"
+            android:layout_width="@dimen/anaSayfaButonWidth"
+            android:layout_height="@dimen/anaSayfaButonHeight"
+            android:background="@color/formRengi"
+            android:gravity="bottom|center|center_vertical"
+            android:paddingBottom="@dimen/anaSayfaButonTextPadding"
+            android:text="@string/talepVeOneriButon"
+            android:textColor="@color/logoRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAnaSayfaSicil" />
+
+        <Button
+            android:id="@+id/btnAnaSayfaIsListeIslemler"
+            android:layout_width="@dimen/anaSayfaButonWidth"
+            android:layout_height="@dimen/anaSayfaButonHeight"
+            android:background="@color/formRengi"
+            android:gravity="bottom|center|center_vertical"
+            android:paddingBottom="@dimen/anaSayfaButonTextPadding"
+            android:text="@string/isListeIslemleri"
+            android:textColor="@color/logoRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            app:layout_constraintStart_toEndOf="@+id/btnAnaSayfaArizalarim"
+            app:layout_constraintTop_toBottomOf="@+id/btnAnaSayfaArizaOlustur" />
+
+        <Button
+            android:id="@+id/btnAnaSayfaIsListesi"
+            android:layout_width="@dimen/anaSayfaButonWidth"
+            android:layout_height="@dimen/anaSayfaButonHeight"
+            android:background="@color/baslikButonRengi"
+            android:gravity="bottom|center|center_vertical"
+            android:paddingBottom="@dimen/anaSayfaButonTextPadding"
+            android:text="@string/islerim"
+            android:textColor="@color/logoRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            app:layout_constraintStart_toEndOf="@+id/btnAnaSayfaBordro"
+            app:layout_constraintTop_toBottomOf="@+id/imgSlider" />
+
+        <Button
+            android:id="@+id/btnAnaSayfaKutuphane"
+            android:layout_width="@dimen/anaSayfaButonWidth"
+            android:layout_height="@dimen/anaSayfaButonHeight"
+            android:background="@color/baslikButonRengi"
+            android:gravity="bottom|center|center_vertical"
+            android:paddingBottom="@dimen/anaSayfaButonTextPadding"
+            android:text="@string/kutuphaneButon"
+            android:textColor="@color/logoRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            app:layout_constraintStart_toEndOf="@+id/btnAnaSayfaHatSorgula"
+            app:layout_constraintTop_toBottomOf="@+id/btnAnaSayfaIzinler" />
+
+
+        <Button
+            android:id="@+id/btnAnaSayfaIzinler"
+            android:layout_width="@dimen/anaSayfaButonWidth"
+            android:layout_height="@dimen/anaSayfaButonHeight"
+            android:background="@color/formRengi"
+            android:gravity="bottom|center|center_vertical"
+            android:paddingBottom="@dimen/anaSayfaButonTextPadding"
+            android:text="@string/izinlerButon"
+            android:textColor="@color/logoRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            app:layout_constraintStart_toEndOf="@+id/btnAnaSayfaIsListesi"
+            app:layout_constraintTop_toBottomOf="@+id/imgSlider" />
+
+        <Button
+            android:id="@+id/btnAnaSayfaHatSorgula"
+            android:layout_width="@dimen/anaSayfaButonWidth"
+            android:layout_height="@dimen/anaSayfaButonHeight"
+            android:background="@color/formRengi"
+            android:gravity="bottom|center|center_vertical"
+            android:paddingBottom="@dimen/anaSayfaButonTextPadding"
+            android:text="@string/hatSorgulaButon"
+            android:textColor="@color/logoRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            app:layout_constraintStart_toEndOf="@+id/btnAnaSayfaArizaOlustur"
+            app:layout_constraintTop_toBottomOf="@+id/btnAnaSayfaIsListesi" />
+
+        <Button
+            android:id="@+id/btnAnaSayfaRaporlar"
+            android:layout_width="@dimen/anaSayfaButonWidth"
+            android:layout_height="@dimen/anaSayfaButonHeight"
+            android:background="@color/formRengi"
+            android:gravity="bottom|center|center_vertical"
+            android:paddingBottom="@dimen/anaSayfaButonTextPadding"
+            android:text="@string/raporlarButon"
+            android:textColor="@color/logoRengi"
+            android:textSize="@dimen/formYaziKucukBoyut"
+            tools:layout_editor_absoluteX="103dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnAnaSayfaIsListeIslemler"
+            app:layout_constraintStart_toEndOf="@+id/btnAnaSayfaIzinIslemleri" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

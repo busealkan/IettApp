@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.KayitOlActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="137dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/viewKayitBg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/formRengi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgKayitOlLogo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/logoBoyut"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/iettlogo" />
+
+            <EditText
+                android:id="@+id/txtKayitAd"
+                android:layout_width="@dimen/txtWidthBoyut"
+                android:layout_height="@dimen/txtHeightBoyut"
+                android:layout_marginLeft="@dimen/txtKayitMarginLeft"
+                android:layout_marginTop="@dimen/txtKayitMarginTop"
+                android:layout_marginBottom="@dimen/txtKayitMarginBottom"
+                android:backgroundTint="@color/logoRengi"
+                android:gravity="center_vertical"
+                android:hint="@string/ad"
+                android:textColor="@color/yaziRengi"
+                android:textSize="@dimen/formYaziBoyut"
+                app:layout_constraintBottom_toTopOf="@+id/txtKayitSoyad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgSifreDegistirlLogo"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/txtKayitSoyad"
+                android:layout_width="@dimen/txtWidthBoyut"
+                android:layout_height="@dimen/txtHeightBoyut"
+                android:layout_marginTop="@dimen/txtKayitMarginTop"
+                android:layout_marginLeft="@dimen/txtKayitMarginLeft"
+                android:backgroundTint="@color/logoRengi"
+                android:gravity="center_vertical"
+                android:hint="@string/soyad"
+                android:textColor="@color/yaziRengi"
+                android:textSize="@dimen/formYaziBoyut"
+                app:layout_constraintBottom_toTopOf="@+id/txtKayitSicil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtKayitAd" />
+
+            <EditText
+                android:id="@+id/txtKayitSicil"
+                android:layout_width="@dimen/txtWidthBoyut"
+                android:layout_height="@dimen/txtHeightBoyut"
+                android:layout_marginTop="@dimen/txtKayitMarginTop"
+                android:layout_marginLeft="@dimen/txtKayitMarginLeft"
+                android:backgroundTint="@color/logoRengi"
+                android:gravity="center_vertical"
+                android:hint="@string/sicilNo"
+                android:textColor="@color/yaziRengi"
+                android:textSize="@dimen/formYaziBoyut"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtKayitSoyad" />
+
+            <EditText
+                android:id="@+id/txtKayitEmail"
+                android:layout_width="@dimen/txtWidthBoyut"
+                android:layout_height="@dimen/txtHeightBoyut"
+                android:layout_marginTop="@dimen/txtKayitMarginTop"
+                android:layout_marginLeft="@dimen/txtKayitMarginLeft"
+                android:backgroundTint="@color/logoRengi"
+                android:gravity="center_vertical"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/yaziRengi"
+                android:textSize="@dimen/formYaziBoyut"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtKayitSicil" />
+
+            <EditText
+                android:id="@+id/txtKayitSifre"
+                android:layout_width="@dimen/txtWidthBoyut"
+                android:layout_height="@dimen/txtHeightBoyut"
+                android:layout_marginTop="@dimen/txtKayitMarginTop"
+                android:layout_marginLeft="@dimen/txtKayitMarginLeft"
+                android:backgroundTint="@color/logoRengi"
+                android:gravity="center_vertical"
+                android:hint="@string/sifre"
+                android:inputType="textPassword"
+                android:textColor="@color/yaziRengi"
+                android:textSize="@dimen/formYaziBoyut"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtKayitEmail" />
+
+            <EditText
+                android:id="@+id/txtKayitSifreTekrar"
+                android:layout_width="@dimen/txtWidthBoyut"
+                android:layout_height="@dimen/txtHeightBoyut"
+                android:layout_marginTop="@dimen/txtKayitMarginTop"
+                android:layout_marginLeft="@dimen/txtKayitMarginLeft"
+                android:backgroundTint="@color/logoRengi"
+                android:gravity="center_vertical"
+                android:hint="@string/sifreTekrar"
+                android:inputType="textPassword"
+                android:textColor="@color/yaziRengi"
+                android:textSize="@dimen/formYaziBoyut"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtKayitSifre" />
+
+
+            <Button
+                android:id="@+id/btnKayitOl"
+                android:layout_width="@dimen/kucukButonBoyut"
+                android:layout_height="@dimen/txtHeightBoyut"
+                android:layout_marginLeft="@dimen/btnKayitMarginLeft"
+                android:layout_marginBottom="@dimen/txtKayitMarginBottom"
+                android:background="@color/logoRengi"
+                android:drawableLeft="@drawable/personadd"
+                android:paddingRight="@dimen/btnKayitPaddingRight"
+                android:text="@string/kayitOl"
+                android:textColor="@color/formRengi"
+                android:textSize="@dimen/formYaziBoyut"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtKayitSifreTekrar"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txtHesapVar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/txtKayitHesapVarMarginLeft"
+                android:layout_marginTop="@dimen/txtKayitMarginTop"
+                android:layout_marginBottom="@dimen/txtKayitMarginBottom"
+                android:text="@string/hesapVar"
+                android:textSize="@dimen/formYaziKucukBoyut"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.308"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnKayitOl" />
+
+            <TextView
+                android:id="@+id/txtGirisYap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/txtKayitGirisMarginLeft"
+                android:layout_marginTop="@dimen/txtKayitGirisMarginTop"
+                android:text="@string/girisYap"
+                android:textColor="@color/logoRengi"
+                android:textSize="@dimen/formYaziKucukBoyut"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toEndOf="@+id/txtHesapVar"
+                app:layout_constraintTop_toBottomOf="@+id/btnKayitOl"
+                app:layout_constraintVertical_bias="0.466" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.h5190059.iett">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_circle"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Iett">
+        <activity android:name=".activities.RaporDuzenleActivity"></activity>
+        <activity android:name=".activities.OnerilerimActivity" />
+        <activity android:name=".activities.TaleplerimActivity" />
+        <activity android:name=".activities.KutuphaneBilgilerAvrupaBolgesiDeparHatlariActivity" />
+        <activity android:name=".activities.KutuphaneBilgilerAnadoluBolgesiDeparHatlariActivity" />
+        <activity android:name=".activities.KutuphaneBilgilerAcilTelefonlarActivity" />
+        <activity android:name=".activities.KutuphaneBilgilerActivity" />
+        <activity android:name=".activities.KutuphaneDosyalarActivity" />
+        <activity android:name=".activities.UyariVeKararlarActivity" />
+        <activity android:name=".activities.KazalarActivity" />
+        <activity android:name=".activities.CezalarActivity" />
+        <activity android:name=".activities.BordroActivity" />
+        <activity android:name=".activities.IzinSorgulamaActivity" />
+        <activity android:name=".activities.IsSilActivity" />
+        <activity android:name=".activities.IzinSilActivity" />
+        <activity android:name=".activities.IzinDuzenleActivity" />
+        <activity android:name=".activities.IzinIslemleriActivity" />
+        <activity android:name=".activities.IzinOlusturActivity" />
+        <activity android:name=".activities.IsIslemleriActivity" />
+        <activity android:name=".activities.RaporDetayActivity" />
+        <activity android:name=".activities.RaporListeleActivity" />
+        <activity android:name=".activities.RaporOlusturActivity" />
+        <activity android:name=".activities.IsDuzenleActivity" />
+        <activity android:name=".activities.IsOlusturActivity" />
+        <activity android:name=".activities.ArizaDetayActivity" />
+        <activity android:name=".activities.ArizaListeleActivity" />
+        <activity android:name=".activities.ArizaOlusturActivity" />
+        <activity android:name=".activities.ProfilActivity" />
+        <activity android:name=".activities.AnaSayfaActivity" />
+        <activity android:name=".activities.IzinlerimActivity" />
+        <activity android:name=".activities.IsSorgulamaActivity" />
+        <activity android:name=".activities.IslerimActivity" />
+        <activity android:name=".activities.HatAramaActivity" />
+        <activity android:name=".activities.OneriDetayActivity" />
+        <activity android:name=".activities.OneriEkleActivity" />
+        <activity android:name=".activities.OneriListeleActivity" />
+        <activity android:name=".activities.TalepDetayActivity" />
+        <activity android:name=".activities.TalepEkleActivity" />
+        <activity android:name=".activities.TalepListeleActivity" />
+        <activity android:name=".activities.TalepVeOneriActivity" />
+        <activity android:name=".activities.SicilActivity" />
+        <activity android:name=".activities.KayitOlActivity" />
+        <activity android:name=".activities.SifreDegistirActivity" />
+        <activity android:name=".activities.SifremiUnuttumActivity" />
+        <activity android:name=".activities.GirisActivity" />
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

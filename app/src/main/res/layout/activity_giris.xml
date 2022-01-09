@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GirisActivity">
+
+    <View
+        android:id="@+id/viewSifreDegistirBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/formRengi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgGirisYapLogo"
+        android:layout_width="@dimen/logoBoyut"
+        android:layout_height="@dimen/logoBoyut"
+        android:layout_marginTop="@dimen/logoGirisMargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iettlogo" />
+
+    <Button
+        android:id="@+id/btnGirisYap"
+        android:layout_width="@dimen/kucukButonBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:layout_marginTop="@dimen/btnGirisMargin"
+        android:background="@color/logoRengi"
+        android:drawableLeft="@drawable/login"
+        android:paddingRight="@dimen/btnGirisPadding"
+        android:text="@string/girisYap"
+        android:textColor="@color/formRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSifreUnuttum" />
+
+    <EditText
+        android:id="@+id/txtGirisSifre"
+        android:layout_width="@dimen/txtWidthBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:layout_marginTop="@dimen/txtGirisMargin"
+        android:backgroundTint="@color/logoRengi"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="@string/sifre"
+        android:inputType="textPassword"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="@+id/viewSifreDegistirBg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGirisEmail" />
+
+    <EditText
+        android:id="@+id/txtGirisEmail"
+        android:layout_width="@dimen/txtWidthBoyut"
+        android:layout_height="@dimen/txtHeightBoyut"
+        android:layout_marginTop="@dimen/txtGirisMargin"
+        android:backgroundTint="@color/logoRengi"
+        android:drawableLeft="@drawable/user"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/yaziRengi"
+        android:textSize="@dimen/formYaziBoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgGirisYapLogo" />
+
+    <TextView
+        android:id="@+id/txtSifreUnuttum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sifremiUnuttumMargin"
+        android:text="@string/sifremiUnuttum"
+        android:textColor="@color/logoRengi"
+        android:textSize="@dimen/formYaziKucukBoyut"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGirisSifre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
